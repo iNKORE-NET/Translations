@@ -9,17 +9,11 @@
         "editor.wordWrap": "on"
     },
 
-    "terminal.integrated.profiles.windows":
+    "terminal.integrated.cwd": "${workspaceFolder}",
+
+
+    "terminal.integrated.env.windows":
     {
-        "PowerShell":
-        {
-            "source": "PowerShell",
-            "icon": "terminal-powershell",
-            "args":
-            [
-
-            ]
-        },
-
+        "PATH": "${workspaceFolder}/binaries;${env:PATH}"
     }
 }

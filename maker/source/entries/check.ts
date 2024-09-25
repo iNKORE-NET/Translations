@@ -59,7 +59,7 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
             errorCount++;
 
             const label = "●";
-            console.log(leftLine + `${chalk.redBright(label)} ${chalk.red(chalk.bold(keyName) + ` (${locale}):`)} ${chalk.red(message)}` + "\r\n" +
+            console.log(leftLine + `${chalk.red(label + " " + chalk.bold(keyName) + ` (${locale}):`)} ${chalk.redBright(message)}` + "\r\n" +
                 leftLine + `${" ".repeat(label.length)} ${chalk.cyan.underline("" + PathHelper.join(dataRootPath, namespace!, item) + "")}`);
         }
 
