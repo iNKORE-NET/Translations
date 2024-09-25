@@ -8,4 +8,18 @@
     {
         "editor.wordWrap": "on"
     },
+
+    "terminal.integrated.profiles.windows":
+    {
+        "PowerShell":
+        {
+            "source": "PowerShell",
+            "icon": "terminal-powershell",
+            "args":
+            [
+
+            ]
+        },
+
+    }
 }
