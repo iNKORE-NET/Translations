@@ -1,3 +1,5 @@
+// @validation-ignore pangula-rules
+
 {
     "en-US": "Whooooops",
     "zh-CN": "哦oooooo不",

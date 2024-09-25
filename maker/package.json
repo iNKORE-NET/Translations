@@ -12,12 +12,16 @@
         "build": "tsup source/main.ts --dts --format cjs,esm",
         "dev": "pnpm build --watch"
     },
-    "keywords": [ ],
+    "keywords": [],
     "author": "NotYoojun",
     "license": "ISC",
     "devDependencies": {
         "@types/node": "^22.7.0",
         "tsup": "^8.3.0",
         "typescript": "^5.6.2"
+    },
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "json5": "^2.2.3"
     }
 }

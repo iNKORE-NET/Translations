@@ -1,34 +1,6 @@
 import { isCJKCharacter } from "source/utils/character-checker";
+import type { Validator } from "../types";
 
-export type Validator =
-{
-    id: string;
-    message?: string;
-
-    /**
-     * @returns `true` if the text is valid, otherwise a message to show to the user. If returns `false`, the `message` property cannot be `undefined` and will be shown to the user.
-     */
-    validate: (text: string) => string | boolean;
-}
-
-export const NoFullwidthPairedPunctuations: Validator =
-{
-    id: "no-fullwidth-paired-punctuations",
-    message: `Fullwidth paired punctuations '（）【】“” ‘’ ' are not allowed. Please use halfwidth paired punctuations ' () [] "" '' '.`,
-
-    validate(text)
-    {
-        const forbiddens =
-        [
-            "（", "）",
-            "【", "】",
-            "“", "”",
-            "‘", "’"
-        ];
-
-        return forbiddens.some(p => text.includes(p)) ? false : true;
-    },
-}
 
 /**
  * For example, '中文English' should be '中文 English'. 
@@ -36,7 +8,7 @@ export const NoFullwidthPairedPunctuations: Validator =
  */
 export const PangulasSpacingValidator: Validator =
 {
-    id: "pangu-spacing",
+    id: "pangula-rules",
     message: `Please use Pangu spacing, which is a space before and after Chinese characters, and no space before and after English characters.`,
 
     validate(text)
@@ -46,10 +18,14 @@ export const PangulasSpacingValidator: Validator =
         /** Those ones that should have spaces after */
         const rightBrackets = [")", "]"];
 
-        const quotes = [`"`, "'", "`"];
+        // Since the single quote is also used as an apostrophe, it is not included in the list
+        const quotes = [`"`, "`"];
 
         /** If one of these characters is found, then both previous and next characters should not be checked */
-        const pairedPunctuations = [...leftBrackets, ...rightBrackets, ...quotes].map(c => c.codePointAt(0)!);
+        const pairedPunctuations = [...leftBrackets, ...rightBrackets, ...quotes, "'"].map(c => c.codePointAt(0)!);
+
+        /**These punctuations can be followed by anything without a space */
+        const punctuationsThatDoesntNeedAFollowingSpace = ["，", "。", "！", "？", "：", "；"];
 
         for (let i = 0; i < text.length; ) 
         {
@@ -108,9 +84,9 @@ export const PangulasSpacingValidator: Validator =
 
                 // When this statement is reached, the character is a Chinese character and not surrounded by other Chinese characters
 
-                if (checkPrevious && text[i - 1] !== " ")
+                if (checkPrevious && (text[i - 1] !== " " && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1])) && i > 0)
                     return true;
-                if (checkNext && text[checkNext == "skipOne" ? i + 2 : i + 1] !== " ")
+                if (checkNext && punctuationsThatDoesntNeedAFollowingSpace.includes(text) && text[checkNext == "skipOne" ? i + 2 : i + 1] !== " " && i < text.length - 1)
                     return true;
 
                 return false;
@@ -128,12 +104,12 @@ export const PangulasSpacingValidator: Validator =
 
             if (leftBrackets.includes(text[i]))
             {
-                if (text[i - 1] !== " ")
+                if (text[i - 1] !== " " && i > 0 && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1]))
                     return "Start brackets should have a space before.";
             }
             else if (rightBrackets.includes(text[i]))
             {
-                if (text[i + 1] !== " ")
+                if (text[i + 1] !== " " && i < text.length - 1)
                     return "End brackets should have a space after.";
             }
 
