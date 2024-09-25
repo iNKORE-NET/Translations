@@ -4,10 +4,7 @@
         "baseUrl": ".",
         "outDir": "./dist/",
         "target": "esnext",
-        "lib":
-        [
-            "esnext"
-        ],
+        "lib": [ "esnext" ],
         "strict": true,
         "noEmit": false,
         "allowJs": true,
@@ -19,7 +16,7 @@
         "isolatedModules": true,
         "strictNullChecks": true,
         "resolveJsonModule": true,
-        "removeComments": false,
+        "removeComments": true,
         "moduleResolution": "node",
         "noFallthroughCasesInSwitch": true,
         "useUnknownInCatchVariables": false,
