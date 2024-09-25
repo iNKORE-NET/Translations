@@ -23,7 +23,18 @@ try
             else if (arg_verbosity === "1") arg_verbosity = "allGroups";
             else if (arg_verbosity === "2") arg_verbosity = "allItems";
 
-            Entry_Check(arg_locale, arg_namespace, arg_verbosity);
+            const totalErrors = Entry_Check(arg_locale, arg_namespace, arg_verbosity);
+
+            console.log("");
+            
+            if (totalErrors > 0)
+            {
+                console.log(chalk.bgRedBright("×") + ` Check complete. Found ${totalErrors} error${totalErrors > 1 ? "s" : ""}.`);
+            }
+            else
+            {
+                console.log(chalk.bgGreen.white("√") + " Check complete. No errors found.");
+            }
         });
 
     program.command("compose")
