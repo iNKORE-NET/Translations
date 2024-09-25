@@ -9,6 +9,7 @@ import { getAllItems, getAllNamespaces } from "source/utils/get-all-items";
 import { PathHelper } from "source/utils/path-utils";
 import * as fs from "fs";
 import { validators } from "source/common/validators";
+import { UserError } from "source/utils/user-error";
 
 /**
  * Check if the specified items can be used in production.
@@ -26,7 +27,7 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
     {
         for (const locale in locales)
         {
-            errorCount = errorCount + Check(locale as Locale, namespace);
+            errorCount = errorCount + Check(locale as Locale, namespace, verbosity);
         }
         return errorCount;
     }
@@ -36,14 +37,20 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
     {
         for (const namespace of getAllNamespaces())
         {
-            errorCount = errorCount + Check(locale, namespace);
+            errorCount = errorCount + Check(locale, namespace, verbosity);
         }
         return errorCount;
     }
 
+    const namespacePath = PathHelper.join(dataRootPath, namespace);
+    if (!fs.existsSync(namespacePath) || !fs.statSync(namespacePath).isDirectory())
+    {
+        throw new UserError(`Namespace '${namespace}' does not exist. Please check your spelling.`);
+    }
+
     console.log(`○ Checking locale '${locale}' on namespace '${namespace}'...`);
 
-    const allItems = getAllItems(PathHelper.join(dataRootPath, namespace));
+    const allItems = getAllItems(namespacePath);
 
     const leftLine = chalk.gray("│ ");
 
@@ -108,12 +115,12 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
         }
         else
         {
-            console.log(leftLineEnd + chalk.greenBright("✔ No error found."));
+            console.log(leftLineEnd + chalk.greenBright("√ No error found."));
         }
     }
     else if (errorCount > 0)
     {
-        console.log(leftLineEnd + chalk.magenta(`✖ Found ${errorCount} error(s).`));
+        console.log(leftLineEnd + chalk.magenta(`× Found ${errorCount} error(s).`));
     }
 
     return errorCount;

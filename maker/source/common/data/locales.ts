@@ -1,3 +1,5 @@
+import { UserError } from "source/utils/user-error";
+
 export const locales =
 {
     "en-US":
@@ -15,10 +17,13 @@ export type Locale = keyof typeof locales;
 
 export function checkLocale(locale: string): Locale
 {
-    if (locale in locales)
-        return locale as Locale;
-    else
+    for (const key in locales)
     {
-        throw new Error(`Locale '${locale}' is not supported. If you want to add a new locale, please add it to 'maker/source/common/data/locales.ts'.`);
+        if (key.toLowerCase() === locale.toLowerCase())
+        {
+            return key as Locale;
+        }
     }
+
+    throw new UserError(`Locale '${locale}' is not supported. If you want to add a new locale, please add it to 'maker/source/common/data/locales.ts'.`);
 }
