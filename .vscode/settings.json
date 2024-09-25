@@ -3,4 +3,9 @@
     {
         "*.json": "jsonc"
     },
+
+    "[jsonc]":
+    {
+        "editor.wordWrap": "on"
+    },
 }
