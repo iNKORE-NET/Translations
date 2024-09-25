@@ -29,11 +29,11 @@ try
             
             if (totalErrors > 0)
             {
-                console.log(chalk.bgRedBright("×") + ` Check complete. Found ${totalErrors} error${totalErrors > 1 ? "s" : ""}.`);
+                console.log(chalk.redBright("■") + chalk.blueBright(` Check complete. Found ${totalErrors} error${totalErrors > 1 ? "s" : ""}.`));
             }
             else
             {
-                console.log(chalk.bgGreen.white("√") + " Check complete. No errors found.");
+                console.log(chalk.greenBright("■") + chalk.blueBright(" Check complete. No errors found."));
             }
         });
 
