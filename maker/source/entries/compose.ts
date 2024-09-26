@@ -87,7 +87,7 @@ export default function Compose(locale: Locale | undefined, namespace: string | 
     fs.writeFileSync(finalPath, JSON.stringify(finalObejct, null, 4));
 
     const leftLineEnd = chalk.gray("└─");
-    console.log(leftLineEnd + chalk.greenBright("√ ") + "Suceessfully composed " + allItems.length + " items to:" + chalk.cyan.underline(finalPath));
+    console.log(leftLineEnd + chalk.greenBright("√ ") + "Suceessfully composed " + allItems.length + " items to: " + chalk.cyan.underline(finalPath));
 
     return result;
 }
