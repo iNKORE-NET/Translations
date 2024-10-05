@@ -15,5 +15,13 @@
     "terminal.integrated.env.windows":
     {
         "PATH": "${workspaceFolder}/binaries;${env:PATH}"
-    }
+    },
+
+    "json.schemas":
+    [
+        {
+            "fileMatch": [ "data/**/*.json" ],
+            "url": "./data.schema.json"
+        }
+    ]
 }
