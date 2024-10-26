@@ -1,5 +1,5 @@
 {
-    "name": "maker",
+    "name": "@inkore/translations-maker",
     "private": true,
     "version": "1.0.0",
     "description": "",
@@ -12,7 +12,7 @@
         "build": "tsup source/main.ts --dts --format cjs,esm",
         "dev": "pnpm build --watch"
     },
-    "keywords": [],
+    "keywords": [ ],
     "author": "NotYoojun",
     "license": "ISC",
     "devDependencies": {

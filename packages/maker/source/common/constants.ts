@@ -12,4 +12,4 @@ export const currentDirectory = (function ()
 })();
 
 export const dataRootPath = path.join(currentDirectory, "data");
-export const outputPath = path.join(currentDirectory, "compose");
+export const outputPath = path.join(currentDirectory, ".compose");

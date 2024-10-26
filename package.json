@@ -1,0 +1,9 @@
+{
+    "name": "@inkore/workspace-translations",
+    "private": true,
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/iNKORE-NET/Translations"
+    }
+}
