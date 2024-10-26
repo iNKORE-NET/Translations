@@ -53,6 +53,7 @@ export default function Compose(locale: Locale | undefined, namespace: string | 
     const leftLine = chalk.gray("│ ");
 
     const finalObejct = {};
+    finalObejct["$timestamp"] = Date.now();
 
     let i = 0;
 
