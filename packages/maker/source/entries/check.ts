@@ -70,38 +70,45 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
                 leftLine + `${" ".repeat(label.length)} File: ${chalk.cyan.underline("" + PathHelper.join(dataRootPath, namespace!, item) + "")}`);
         }
 
-        const dataContent = fs.readFileSync(filePath, "utf-8");
-        const dataObject = JSON5.parse(dataContent);
-        const data = dataObject[locale];
-
-        if (typeof data !== "string")
+        try
         {
-            reportError("The value is missing or not a string.");
-            continue;
-        }
+            const dataContent = fs.readFileSync(filePath, "utf-8");
+            const dataObject = JSON5.parse(dataContent);
+            const data = dataObject[locale];
 
-        for (const validator of Object.values(validators))
-        {
-            const ignoreKey = "// @validation-ignore " + validator.id;
-
-            if (dataContent.includes(ignoreKey))
+            if (typeof data !== "string")
             {
+                reportError("The value is missing or not a string.");
                 continue;
             }
 
-            const result = validator.validate(data);
-            if (result !== true)
+            for (const validator of Object.values(validators))
             {
-                reportError(typeof result === "string" ? result : validator.message ?? "Unknown error.");
-                continue;
+                const ignoreKey = "// @validation-ignore " + validator.id;
+
+                if (dataContent.includes(ignoreKey))
+                {
+                    continue;
+                }
+
+                const result = validator.validate(data);
+                if (result !== true)
+                {
+                    reportError(typeof result === "string" ? result : validator.message ?? "Unknown error.");
+                    continue;
+                }
+            }
+
+            // Now there is no error.
+
+            if (verbosity === "allItems")
+            {
+                console.log(leftLine + chalk.greenBright("○ ") + chalk.gray(chalk.bold(keyName) + ` (${locale})` + ": " + "no issue found."));
             }
         }
-
-        // Now there is no error.
-
-        if (verbosity === "allItems")
+        catch (error)
         {
-            console.log(leftLine + chalk.greenBright("○ ") + chalk.gray(chalk.bold(keyName) + ` (${locale})` + ": " + "no issue found."));
+            reportError("Failed to read the file.");
         }
     }
 

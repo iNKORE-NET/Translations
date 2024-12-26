@@ -59,21 +59,29 @@ export default function Compose(locale: Locale | undefined, namespace: string | 
 
     for (const item of allItems)
     {
-        const filePath = PathHelper.join(dataRootPath, namespace, item);
+        try
+        {
+            const filePath = PathHelper.join(dataRootPath, namespace, item);
 
-        let keyName = item.replaceAll("/", ".");
-        keyName = keyName.substring(0, keyName.length - ".json".length);
-
-
-
-        const dataContent = fs.readFileSync(filePath, "utf-8");
-        const dataObject = JSON5.parse(dataContent);
-        const data = dataObject[locale];
+            let keyName = item.replaceAll("/", ".");
+            keyName = keyName.substring(0, keyName.length - ".json".length);
 
 
-        finalObejct[keyName] = data;
 
-        console.log(leftLine + chalk.greenBright("○ ") + chalk.gray(`(${(i + 1).toString().padStart(allItems.length.toFixed(0).length, "0")}) ` + "Write item: " + keyName + ` (${locale})`));
+            const dataContent = fs.readFileSync(filePath, "utf-8");
+            const dataObject = JSON5.parse(dataContent);
+            const data = dataObject[locale];
+
+
+            finalObejct[keyName] = data;
+
+            console.log(leftLine + chalk.greenBright("○ ") + chalk.gray(`(${(i + 1).toString().padStart(allItems.length.toFixed(0).length, "0")}) ` + "Write item: " + keyName + ` (${locale})`));
+        }
+        catch (error)   
+        {
+            console.error(leftLine + chalk.redBright("× ") + chalk.gray(`(${(i + 1).toString().padStart(allItems.length.toFixed(0).length, "0")}) ` + "Failed to write item: " + item));
+            result = false;
+        }
 
         i++;
     }
