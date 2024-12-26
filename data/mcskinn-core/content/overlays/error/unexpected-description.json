@@ -1,0 +1,5 @@
+{
+    "en-US": "It seems that this is totally unexpected and should not happen. We can't make sure that this error will not cause more unexpected behavior or data loss. Please save your work right now and restart the application as soon as possible. \r\nIn the meanwhile, it will be significantly helpful if you can report this error to us via email. We really appreciate your patience and understanding.",
+
+    "zh-CN": "这似乎是完全意外的，不应该发生。我们无法保证这个错误不会导致更多意外行为或数据丢失。请立即保存您的工作并尽快重新启动应用程序。\r\n同时，如果您能通过电子邮件向我们报告此错误，将会非常有帮助。我们非常感谢您的耐心和理解。"
+}

@@ -25,7 +25,7 @@ export const PangulasSpacingValidator: Validator =
         const pairedPunctuations = [...leftBrackets, ...rightBrackets, ...quotes, "'"].map(c => c.codePointAt(0)!);
 
         /**These punctuations can be followed by anything without a space */
-        const punctuationsThatDoesntNeedAFollowingSpace = ["，", "。", "！", "？", "：", "；", "/", "\\"];
+        const punctuationsThatDoesntNeedAFollowingSpace = ["，", "。", "！", "？", "：", "；", "/", "\\", "\r", "\n"];
 
         for (let i = 0; i < text.length; ) 
         {
