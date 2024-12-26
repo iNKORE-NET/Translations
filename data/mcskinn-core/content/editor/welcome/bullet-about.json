@@ -1,0 +1,7 @@
+// About the bullet items
+// The display length of the translations should be as close as possible to the original en-US text.
+
+{
+    "en-US": "About",
+    "zh-CN": "关于程序"
+}
