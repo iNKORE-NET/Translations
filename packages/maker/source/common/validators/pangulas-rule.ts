@@ -84,16 +84,16 @@ export const PangulasSpacingValidator: Validator =
 
                 // When this statement is reached, the character is a Chinese character and not surrounded by other Chinese characters
 
-                if (checkPrevious && (text[i - 1] !== " " && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1])) && i > 0)
-                    return true;
+                if (checkPrevious && (text[i - 1] !== " " && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1])) && i > 0 && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i]))
+                    return i;
                 if (checkNext && punctuationsThatDoesntNeedAFollowingSpace.includes(text) && text[checkNext == "skipOne" ? i + 2 : i + 1] !== " " && i < text.length - 1)
-                    return true;
+                    return i + 1;
 
                 return false;
 
-            })() == true)
+            })() !== false)
             {
-                return "Chinese characters segments should be surrounded by spaces.";
+                return `Chinese characters segments should be surrounded by spaces. (Position: ${i})`;
             }
 
 
