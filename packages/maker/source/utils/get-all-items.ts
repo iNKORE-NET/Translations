@@ -23,6 +23,8 @@ export function getAllItems(parentDir: string = dataRootPath)
             const relativePath = PathHelper.join(dir, file);
             const absolutePath = PathHelper.join(parentDir, relativePath);
 
+            if (file.startsWith(".")) continue;
+
             if (fs.statSync(absolutePath).isDirectory())
             {
                 readDirectory(relativePath);
