@@ -86,7 +86,7 @@ export default function Compose(locale: Locale | undefined, namespace: string | 
         i++;
     }
 
-    const finalPath = PathHelper.join(outputPath, namespace, `${locale}.json`);
+    const finalPath = PathHelper.join(outputPath, namespace, `${locale.toLowerCase()}.json`);
 
     if (!fs.existsSync(PathHelper.join(outputPath, namespace)))
     {
