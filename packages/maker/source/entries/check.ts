@@ -4,9 +4,9 @@ import JSON5 from "json5";
 import * as readline from 'readline';
 import * as fs from "fs";
 
-import { dataRootPath } from "source/common/constants";
+import { namespaceRootPath, projectRootPath } from "source/common/constants";
 import { Locale, locales } from "source/common/data/locales";
-import { getAllItems, getAllNamespaces } from "source/utilities/get-all-items";
+import { getAllItems, getAllProjects } from "source/utilities/get-all-items";
 import { PathHelper } from "source/utilities/path-utils";
 import { validators } from "source/common/validators";
 import { UserError } from "source/utilities/user-error";
@@ -18,7 +18,7 @@ import { UserError } from "source/utilities/user-error";
  * @param verbosity The verbosity of the output.
  * @returns The number of errors found.
  */
-export default function Check(locale: Locale | undefined = undefined, namespace: string | undefined = undefined, verbosity: "errorOnly" | "allGroups" | "allItems" = "allGroups"): number
+export default function Check(locale: Locale | undefined = undefined, project: string | undefined = undefined, verbosity: Parameters<typeof checkNamespace>[2] = "allGroups"): number
 {
     let errorCount = 0;
 
@@ -27,28 +27,69 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
     {
         for (const locale in locales)
         {
-            errorCount = errorCount + Check(locale as Locale, namespace, verbosity);
+            errorCount = errorCount + Check(locale as Locale, project, verbosity);
         }
         return errorCount;
     }
 
     // When namespace is undefined, check all namespaces.
-    if (namespace === undefined)
+    if (project === undefined)
     {
-        for (const namespace of getAllNamespaces())
+        for (const proj of getAllProjects())
         {
-            errorCount = errorCount + Check(locale, namespace, verbosity);
+            errorCount = errorCount + Check(locale, proj, verbosity);
         }
         return errorCount;
     }
 
-    const namespacePath = PathHelper.join(dataRootPath, namespace);
-    if (!fs.existsSync(namespacePath) || !fs.statSync(namespacePath).isDirectory())
+    const projectPath = PathHelper.join(projectRootPath, project + ".json");
+    if (!fs.existsSync(projectPath) || !fs.statSync(projectPath).isFile())
     {
-        throw new UserError(`Namespace '${namespace}' does not exist. Please check your spelling.`);
+        throw new UserError(`Export '${project}' does not exist. Please check your spelling.`);
     }
 
-    console.log(`○ Checking locale '${locale}' on namespace '${namespace}'...`);
+    if (verbosity !== "none")
+        console.log(`○ Checking locale '${locale}' on project '${project}'...`);
+
+    const projectInfo = JSON5.parse(fs.readFileSync(projectPath, "utf-8"));
+    if (Array.isArray(projectInfo.includes))
+    {
+        for (const namespace of projectInfo.includes)
+        {
+            const composed = checkNamespace(locale, namespace, verbosity);
+            errorCount = errorCount + composed;
+            // for (const key in composed)
+            // {
+            //     finalObject[key] = composed[key];
+            // }
+        }
+    }
+
+    const leftLineEnd = chalk.gray("└─");
+    if (errorCount === 0)
+    {
+        if (verbosity === "errorOnly")
+        {
+            clearPreviousLine();
+        }
+        else
+        {
+            if (verbosity !== "none")
+                console.log(leftLineEnd + chalk.greenBright("√ No error found."));
+        }
+    }
+    else if (errorCount > 0)
+    {
+        console.log(leftLineEnd + chalk.magenta(`× Found ${errorCount} error(s).`));
+    }
+
+    return errorCount;
+}
+
+export function checkNamespace(locale: Locale, namespace: string, verbosity: "errorOnly" | "allGroups" | "allItems" | "none" = "allGroups"): number
+{
+    let errorCount = 0;
+    const namespacePath = PathHelper.join(namespaceRootPath, namespace);
 
     const allItems = getAllItems(namespacePath);
 
@@ -56,7 +97,7 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
 
     for (const item of allItems)
     {
-        const filePath = PathHelper.join(dataRootPath, namespace, item);
+        const filePath = PathHelper.join(namespacePath, item);
 
         let keyName = item.replaceAll("/", ".");
         keyName = keyName.substring(0, keyName.length - ".json".length);
@@ -67,7 +108,7 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
 
             const label = "●";
             console.log(leftLine + `${chalk.red(label + " " + chalk.bold(keyName) + ` (${locale}):`)} ${chalk.redBright(message)}` + "\r\n" +
-                leftLine + `${" ".repeat(label.length)} File: ${chalk.cyan.underline("" + PathHelper.join(dataRootPath, namespace!, item) + "")}`);
+                leftLine + `${" ".repeat(label.length)} File: ${chalk.cyan.underline("" + PathHelper.join(namespacePath, item) + "")}`);
         }
 
         try
@@ -110,24 +151,6 @@ export default function Check(locale: Locale | undefined = undefined, namespace:
         {
             reportError("Failed to read the file.");
         }
-    }
-
-    const leftLineEnd = chalk.gray("└─");
-
-    if (errorCount === 0)
-    {
-        if (verbosity === "errorOnly")
-        {
-            clearPreviousLine();
-        }
-        else
-        {
-            console.log(leftLineEnd + chalk.greenBright("√ No error found."));
-        }
-    }
-    else if (errorCount > 0)
-    {
-        console.log(leftLineEnd + chalk.magenta(`× Found ${errorCount} error(s).`));
     }
 
     return errorCount;

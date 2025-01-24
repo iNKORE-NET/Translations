@@ -13,7 +13,7 @@
             [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/maker/dist/main.js",
+            "program": "${workspaceFolder}/packages/maker/dist/main.js",
             "args": [ "check", "all", "all" ],
             "outFiles":
             [

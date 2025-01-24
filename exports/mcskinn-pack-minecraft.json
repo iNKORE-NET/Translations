@@ -3,6 +3,6 @@
     "includes":
     [
         "mcskinn-pack-common",
-        "mcskinn-pack-mcskinn"
+        "mcskinn-pack-minecraft"
     ]
 }

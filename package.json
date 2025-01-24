@@ -2,7 +2,8 @@
     "name": "@inkore/workspace-translations",
     "private": true,
     "scripts": {
-        "comp": "node packages/maker/dist/main.js compose"
+        "comp": "node packages/maker/dist/main.js compose",
+        "chk": "node packages/maker/dist/main.js check"
     },
     "repository":
     {

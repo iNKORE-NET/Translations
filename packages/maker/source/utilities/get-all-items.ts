@@ -1,13 +1,22 @@
-import { dataRootPath } from "source/common/constants";
+import { namespaceRootPath, projectRootPath } from "source/common/constants";
 import * as fs from "fs";
 import { PathHelper } from "./path-utils";
 
 export function getAllNamespaces()
 {
-    return fs.readdirSync(dataRootPath);
+    return fs.readdirSync(namespaceRootPath);
 }
 
-export function getAllItems(parentDir: string = dataRootPath)
+export function getAllProjects()
+{
+    const r = fs.readdirSync(projectRootPath).map((s) => 
+    {
+        if (s.toLowerCase().endsWith(".json")) return s.slice(0, s.length - ".json".length);
+    }).filter((s) => s);
+    return r as string[];
+}
+
+export function getAllItems(parentDir: string = namespaceRootPath)
 {
     // Get all items recursively.
 
