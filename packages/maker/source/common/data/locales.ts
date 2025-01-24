@@ -1,4 +1,4 @@
-import { UserError } from "source/utils/user-error";
+import { UserError } from "source/utilities/user-error";
 
 export const locales =
 {

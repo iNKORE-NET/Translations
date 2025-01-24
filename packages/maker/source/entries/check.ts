@@ -6,10 +6,10 @@ import * as fs from "fs";
 
 import { dataRootPath } from "source/common/constants";
 import { Locale, locales } from "source/common/data/locales";
-import { getAllItems, getAllNamespaces } from "source/utils/get-all-items";
-import { PathHelper } from "source/utils/path-utils";
+import { getAllItems, getAllNamespaces } from "source/utilities/get-all-items";
+import { PathHelper } from "source/utilities/path-utils";
 import { validators } from "source/common/validators";
-import { UserError } from "source/utils/user-error";
+import { UserError } from "source/utilities/user-error";
 
 /**
  * Check if the specified items can be used in production.

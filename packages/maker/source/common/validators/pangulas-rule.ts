@@ -1,4 +1,4 @@
-import { isCJKCharacter } from "source/utils/character-checker";
+import { isCJKCharacter } from "source/utilities/character-checker";
 import type { Validator } from "../types";
 
 

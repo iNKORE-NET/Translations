@@ -5,7 +5,7 @@ import Entry_Compose from "source/entries/compose";
 import Entry_Check from "source/entries/check";
 
 import chalk from "chalk";
-import { UserError } from "source/utils/user-error";
+import { UserError } from "source/utilities/user-error";
 
 let exitCode = 0;
 

@@ -1,8 +1,8 @@
 import { dataRootPath, outputPath } from "source/common/constants";
 import { Locale, locales } from "source/common/data/locales";
-import { getAllItems, getAllNamespaces } from "source/utils/get-all-items";
-import { PathHelper } from "source/utils/path-utils";
-import { UserError } from "source/utils/user-error";
+import { getAllItems, getAllNamespaces } from "source/utilities/get-all-items";
+import { PathHelper } from "source/utilities/path-utils";
+import { UserError } from "source/utilities/user-error";
 import * as fs from "fs";
 import chalk from "chalk";
 import JSON5 from "json5";
