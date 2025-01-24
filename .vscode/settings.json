@@ -20,8 +20,12 @@
     "json.schemas":
     [
         {
-            "fileMatch": [ "data/**/*.json" ],
-            "url": "./data.schema.json"
+            "fileMatch": [ "namespaces/**/*.json" ],
+            "url": "./schemas/data.schema.json"
+        },
+        {
+            "fileMatch": [ "exports/*.json" ],
+            "url": "./schemas/export.schema.json"
         }
     ]
 }

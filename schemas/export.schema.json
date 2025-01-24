@@ -1,0 +1,18 @@
+{
+    "$id": "http://schemas.inkore.net/translation-export",
+    "title": "Translation Export",
+    "description": "A translation export",
+    "type": "object",
+    "properties":
+    {
+        "includes":
+        {
+            "type": "array",
+            "description": "The namespaces to include",
+            "items": { "type": "string" }
+        }
+    },
+
+    "required": [ "includes" ],
+    "allowTrailingCommas": true
+}
