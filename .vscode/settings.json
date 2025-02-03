@@ -1,7 +1,8 @@
 {
     "files.associations":
     {
-        "*.json": "jsonc"
+        "*.json": "jsonc",
+        // "namespaces/**/*.json": "json5"
     },
 
     "[jsonc]":
