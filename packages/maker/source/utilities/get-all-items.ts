@@ -56,16 +56,16 @@ export function getAllItems(parentDir: string = namespaceRootPath)
 
 export function readItemData(filePath: string, locale: Locale)
 {
-    let keyName = path.basename(filePath);
+    let basename = path.basename(filePath);
 
-    const ext = path.extname(keyName).toLowerCase();
+    const ext = path.extname(basename).toLowerCase();
     let data: string | null = null;
     let type: "markdown" | "plaintext" = "plaintext";
     let fileType: "md" | "txt" | "json" = "txt";
     const dataContent = fs.readFileSync(filePath, "utf-8");
     if ([".json", ".json5"].includes(ext))
     {
-        keyName = keyName.substring(0, keyName.length - ext.length);
+        basename = basename.substring(0, basename.length - ext.length);
         const dataObject = JSON5.parse(dataContent);
         data = dataObject[locale];
         type = "plaintext";
@@ -73,17 +73,17 @@ export function readItemData(filePath: string, locale: Locale)
     }
     else if ([".txt", ".md"].includes(ext))
     {
-        const spl = keyName.split(".");
+        const spl = basename.split(".");
         const itemLocale = spl[spl.length - 2];
 
         if (itemLocale.toLowerCase() == locale.toLowerCase())
         {
-            keyName = keyName.substring(0, keyName.length - ext.length - itemLocale.length - 1);
+            basename = basename.substring(0, basename.length - ext.length - itemLocale.length - 1);
             data = dataContent;
             type = ext === ".md" ? "markdown" : "plaintext";
             fileType = ext === ".md" ? "md" : "txt";
         }
     }
 
-    return data === null ? null : { keyName, data, dataContent, type, fileType };
+    return data === null ? null : { basename, data, dataContent, type, fileType };
 }

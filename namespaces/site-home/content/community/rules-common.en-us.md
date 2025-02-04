@@ -4,17 +4,17 @@
 
 **No External Sharing**: Do not <u>screenshot or share chat logs</u> outside the community to provoke conflict or public discussion. We are not responsible for anything members share outside the group. If you have seen anyone sharing chat logs to other groups or platforms, please report it to the admins. You will be rewarded for your help, and the person who shared the chat logs will be <u>immediately banned</u>.
 
-**Keep Conflicts In-House**: Any <u>disputes or disagreements</u> should be resolved privately. Do not involve other members or admins unless necessary. Doxxing, threatening, or blackmailing is strictly prohibited.
+**Keep Conflicts In-House**: Any <u>disputes or disagreements</u> that do not have a positive impact on our company, it's services or products, most members in the group, or the development of humanity and technology should be resolved privately. Do not involve other members or admins unless necessary. Doxxing, threatening, or blackmailing is strictly prohibited.
 
 **Mind Your Energy**: Negativity should be respected, however, spreading it around is really not cool. Keep it to yourself. Treat everyone, including staff, <u>with respect and kindness</u>.
 
 ## 2. Content Standards
 
-**Never Talk about State Affairs**: Avoid discussing <u>politics, religion, race, or other sensitive topics</u>. This includes sharing content that could be considered illegal or harmful. Neither praise, comment, nor criticize any political, religion party, figures, events, or any other sensitive topics.
+**Never Talk about State Affairs**: Avoid discussing <u>politics, religion, race, sexuality, or other sensitive topics</u>. This includes sharing content that could be considered illegal or harmful. Neither praise, comment, nor criticize any political, religion party, figures, events, or any other sensitive topics.
 
-**Zero Tolerance for Illegal Content**: Do not share or promote <u>illegal activities</u>, including piracy, hacking, or any form of criminal behavior. You should also follow the rules of the region the <u>chat platform is based in</u>. *(For example, if the chat platform is based in the US, you should follow US laws; if the chat platform is based in CN, you should follow the Chinese laws, where VPNs are not allowed.)*
+**Zero Tolerance for Illegal Content**: Do not share or promote <u>illegal activities</u>, including piracy, hacking, or any form of criminal behavior. You should also follow the rules of the region the <u>chat platform is based in</u>. *(For example, if the chat platform is based in the US, you should follow US laws; if the chat platform is based in CN, you should follow the Chinese laws, where some websites are not allowed to be accessed by some means.)*
 
-**Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit, or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remeber that kids might be in the group, so keep it clean.
+**Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit (such as sexual, bloody content), or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remeber that <u>kids of all ages</u> might be in the group, so please <u>keep it clean</u>.
 
 **No Plagiarism**: Do not share content that is <u>not yours without proper credit</u>. This includes copying, stealing, or claiming someone else's work as your own.
 
@@ -28,14 +28,14 @@
 
 ## 4. Profit & Promotion
 
-**No Ads or Promotions**: Unsanctioned ads, product/service recommendations, buying/selling requests, or idle trading promotions are not allowed. This also includes sharing referral links, affiliate links, or any other form of <u>self-promotion</u>. *(e.g. "Check out my new video", "Join my Discord server", "I'm selling this item", "Help me build my app", "I'm looking for someone to do this for me, I'll pay you", etc.)*
+**No Ads or Promotions**: Unsanctioned <u>ads</u>, product/service <u>recommendations</u>, buying/selling <u>requests</u>, or idle trading <u>promotions</u> are not allowed. This also includes sharing referral links, affiliate links, or any other form of <u>self-promotion</u>. *(e.g. "Check out my new video", "Join my Discord server", "I'm selling this item", "Help me build my app", "I'm looking for someone to do this for me, I'll pay you", "I'm new here, this is my channel, please subscribe", etc.)*
 
-**No Exploitative Behavior**: Do not take advantage of the community for personal gain, such as asking for free work, services, recruitment, paid services, or any other form of exploitation.
+**No Exploitative Behavior**: Do not <u>take advantage of the community for personal gain</u>, such as asking for free work, services, recruitment, paid services, or any other form of exploitation.
 
-## Final Note
+## The Finale
 
 If you have violated any of the rules above, you will be warned, muted, kicked, or banned based on the severity of the violation, and the message will be immediately deleted. If you witness any violations, please report them to the admins.
 
-The rules are subject to change, and we reserve the right to enforce them at our discretion. Please keep an eye on the rules in our [official website](https://www.inkore.net/community). These rules (what you are reading now) apply to all platforms, groups, and communities we manage. We may have additional rules for specific chat platforms, which are listed at the entrance of the invite link.
+The rules are subject to change, and we reserve the right to enforce them at our discretion. Please keep an eye on the rules in our [official website](https://www.inkore.net/community). All rules are subject to the latest version on the official website. These rules apply to all platforms, groups, and communities we manage. We may have additional rules for specific chat platforms, which are listed at the entrance of the invite link.
 
 We strive to foster a welcoming, creative, and safe environment. Let's keep conversations kind, constructive, and fun for everyone! 😄
