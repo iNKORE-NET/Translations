@@ -7,7 +7,7 @@ import path from "node:path";
 
 import { namespaceRootPath, projectRootPath } from "source/common/constants";
 import { Locale, locales } from "source/common/data/locales";
-import { getAllItems, getAllProjects } from "source/utilities/get-all-items";
+import { getAllItems, getAllProjects, readItemData } from "source/utilities/get-all-items";
 import { PathHelper } from "source/utilities/path-utils";
 import { validators } from "source/common/validators";
 import { UserError } from "source/utilities/user-error";
@@ -100,11 +100,8 @@ export function checkNamespace(locale: Locale, namespace: string, verbosity: "er
     {
         const filePath = PathHelper.join(namespacePath, item);
 
-        let keyName = item.replaceAll("/", ".");
-        const ext = path.extname(keyName);
-        if (![".json", ".json5"].includes(ext)) continue;
-        keyName = keyName.substring(0, keyName.length - ext.length);
-
+        const { keyName, data, dataContent, type } = readItemData(filePath, locale) ?? { };
+        if (keyName === undefined || data === undefined || dataContent === undefined) continue;
         function reportError(message: string)
         {
             errorCount++;
@@ -116,10 +113,6 @@ export function checkNamespace(locale: Locale, namespace: string, verbosity: "er
 
         try
         {
-            const dataContent = fs.readFileSync(filePath, "utf-8");
-            const dataObject = JSON5.parse(dataContent);
-            const data = dataObject[locale];
-
             if (typeof data !== "string")
             {
                 reportError("The value is missing or not a string.");
@@ -135,7 +128,7 @@ export function checkNamespace(locale: Locale, namespace: string, verbosity: "er
                     continue;
                 }
 
-                const result = validator.validate(data);
+                const result = validator.validate(data, { type: type! });
                 if (result !== true)
                 {
                     reportError(typeof result === "string" ? result : validator.message ?? "Unknown error.");
@@ -152,7 +145,7 @@ export function checkNamespace(locale: Locale, namespace: string, verbosity: "er
         }
         catch (error)
         {
-            reportError("Failed to read the file.");
+            reportError(`${error}`);
         }
     }
 

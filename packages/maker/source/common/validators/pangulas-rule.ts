@@ -11,7 +11,7 @@ export const PangulasSpacingValidator: Validator =
     id: "pangula-rules",
     message: `Please use Pangu spacing, which is a space before and after Chinese characters, and no space before and after English characters.`,
 
-    validate(text)
+    validate(text, { type })
     {
         /** Those ones that should have spaces before */
         const leftBrackets = ["(", "["];
@@ -24,8 +24,25 @@ export const PangulasSpacingValidator: Validator =
         /** If one of these characters is found, then both previous and next characters should not be checked */
         const pairedPunctuations = [...leftBrackets, ...rightBrackets, ...quotes, "'"].map(c => c.codePointAt(0)!);
 
+        const allowedCJKPunctuations = ["，", "。", "！", "？", "：", "；", "、"];
+
         /**These punctuations can be followed by anything without a space */
-        const punctuationsThatDoesntNeedAFollowingSpace = ["，", "。", "！", "？", "：", "；", "/", "\\", "\r", "\n"];
+        const punctuationsThatDoesntNeedAFollowingSpace = ["/", "\\", "\r", "\n", ...allowedCJKPunctuations];
+
+        /**
+         * Check if the whitespace can be treated as a space
+         * If type is "plain", only real spaces are treated as spaces
+         * If type is "markdown", spaces and makrdown formatting characters are treated as spaces
+         */
+        function canTreatedWhitespace(tester: string, allowPunctuations: false | true | "ascii" | "cjk" = false)
+        {
+            const allowed = [" ", "\t", "\r", "\n"];
+            if (type === "markdown") allowed.push("*", "_", "`", "~", "<", ">", "#", "-", "+", "=", "|", ":", "!", "[", "]", "(", ")");
+            if (allowPunctuations === true || allowPunctuations == "ascii") allowed.push(...[".", ",", "?"]);
+            if (allowPunctuations === true || allowPunctuations == "cjk") allowed.push(...allowedCJKPunctuations);
+
+            return allowed.includes(tester);
+        }
 
         for (let i = 0; i < text.length; ) 
         {
@@ -35,7 +52,7 @@ export const PangulasSpacingValidator: Validator =
             // Check if a Chinese character segment is surrounded by spaces (Returns true if a mistake is found)
             // -----------------------
 
-            if ((function ()
+            const err = (function ()
             {
                 if (!isCJKCharacter(codePoint!) && codePoint! <= 0xFFFF)
                 {
@@ -84,16 +101,20 @@ export const PangulasSpacingValidator: Validator =
 
                 // When this statement is reached, the character is a Chinese character and not surrounded by other Chinese characters
 
-                if (checkPrevious && (text[i - 1] !== " " && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1])) && i > 0 && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i]))
+                if (checkPrevious && (!canTreatedWhitespace(text[i - 1]) && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1])) 
+                    && i > 0 && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i]))
                     return i;
-                if (checkNext && punctuationsThatDoesntNeedAFollowingSpace.includes(text) && text[checkNext == "skipOne" ? i + 2 : i + 1] !== " " && i < text.length - 1)
+                if (checkNext && punctuationsThatDoesntNeedAFollowingSpace.includes(text) 
+                    && !canTreatedWhitespace(text[checkNext == "skipOne" ? i + 2 : i + 1]) && i < text.length - 1)
                     return i + 1;
 
                 return false;
 
-            })() !== false)
+            })();
+
+            if (err !== false)
             {
-                return `Chinese characters segments should be surrounded by spaces. (Position: ${i})`;
+                return `Chinese characters segments should be surrounded by spaces. (Position: ${i}, ${text.substring(i-7, (i + 7))})`;
             }
 
 
@@ -102,15 +123,18 @@ export const PangulasSpacingValidator: Validator =
             // -----------------------
 
 
-            if (leftBrackets.includes(text[i]))
+            if (type == "plaintext") // In Markdown brackets may be used for formatting
             {
-                if (text[i - 1] !== " " && i > 0 && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1]))
-                    return "Start brackets should have a space before.";
-            }
-            else if (rightBrackets.includes(text[i]))
-            {
-                if (text[i + 1] !== " " && i < text.length - 1)
-                    return "End brackets should have a space after.";
+                if (leftBrackets.includes(text[i]))
+                {
+                    if (!canTreatedWhitespace(text[i - 1], true) && i > 0 && !punctuationsThatDoesntNeedAFollowingSpace.includes(text[i - 1]))
+                        return `Start brackets should have a space before. ${text[i - 1]}`;
+                }
+                else if (rightBrackets.includes(text[i]))
+                {
+                    if (!canTreatedWhitespace(text[i + 1], true) && i < text.length - 1)
+                        return "End brackets should have a space after.";
+                }
             }
 
             // -----------------------
@@ -119,7 +143,7 @@ export const PangulasSpacingValidator: Validator =
 
             if (quotes.includes(text[i]))
             {
-                if (text[i - 1] !== " " && text[i + 1] !== " ")
+                if (!canTreatedWhitespace(text[i - 1], true) && !canTreatedWhitespace(text[i + 1], true))
                     return "Quotes should have a space on only one side.";
             }
              
