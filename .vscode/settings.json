@@ -10,6 +10,12 @@
         "editor.wordWrap": "on"
     },
 
+    "[plaintext]": {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": true,
+        "editor.wordWrap": "on"
+    },
+
     "terminal.integrated.cwd": "${workspaceFolder}",
 
 

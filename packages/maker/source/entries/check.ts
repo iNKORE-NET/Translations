@@ -2,7 +2,8 @@ import chalk from "chalk";
 import JSON5 from "json5";
 
 import * as readline from 'readline';
-import * as fs from "fs";
+import * as fs from "node:fs";
+import path from "node:path";
 
 import { namespaceRootPath, projectRootPath } from "source/common/constants";
 import { Locale, locales } from "source/common/data/locales";
@@ -100,7 +101,9 @@ export function checkNamespace(locale: Locale, namespace: string, verbosity: "er
         const filePath = PathHelper.join(namespacePath, item);
 
         let keyName = item.replaceAll("/", ".");
-        keyName = keyName.substring(0, keyName.length - ".json".length);
+        const ext = path.extname(keyName);
+        if (![".json", ".json5"].includes(ext)) continue;
+        keyName = keyName.substring(0, keyName.length - ext.length);
 
         function reportError(message: string)
         {

@@ -1,0 +1,5 @@
+The current document does not match the expected size pattern from the selected model. Most likely you've chosen a wrong model or the document, so please double check your selection. If this is intentional, you can choose one of the following options to proceed:
+
+Ignore: Ignore the document size and process the document as is. This will NOT modify any of the pixel content of the document, and can be easily undone by selecting a different model later. This may cause the model and canvas to be misaligned or produce unexpected results.
+Crop: Simply crop the document to the expected size without processing the pixel content. The crop will keep the top-left part of the document based on the expected size. If you are switching between Human and Human (Minimal) models, USE THIS OPTION.
+Stretch: Forcibly scale the document to the expected size. This will stretch or compress the current pixel content to match the expected size, which may affect the appearance of the document. The result might be similar to 'Ignore' option, but canvas will be aligned correctly.
