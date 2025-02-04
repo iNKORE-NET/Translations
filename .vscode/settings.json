@@ -10,7 +10,8 @@
         "editor.wordWrap": "on"
     },
 
-    "[plaintext]": {
+    "[plaintext]":
+    {
         "editor.unicodeHighlight.ambiguousCharacters": false,
         "editor.unicodeHighlight.invisibleCharacters": true,
         "editor.wordWrap": "on"
