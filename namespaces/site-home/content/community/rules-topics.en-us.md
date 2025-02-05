@@ -1,4 +1,4 @@
-We have divided some of the communities into different topics or interests to help you find the right place to chat. Each channel has its own rules and guidelines, so please read them carefully before participating. Before you join, please make sure you are joining the right channel for your interests. 
+We have divided some of the communities into different topics or interests to help you find the right place to chat. Each channel has its own rules and guidelines, so please read them carefully before participating. Before you join, please make sure you are joining the right channel for your interests.
 
 ## Division of Topics
 
