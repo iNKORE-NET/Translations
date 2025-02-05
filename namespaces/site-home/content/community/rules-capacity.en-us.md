@@ -26,6 +26,14 @@ Those violating our Community Guidelines
 
 **Our Stance**: We won't create Group #2, #3, etc. Focused, active hubs > multiple dead chats.
 
+### What Should I Do?
+
+Try to engage more in the group if you can. Now's the time to speak up!
+
+Add our offical website to your bookmarks, leave quietly, and come back loudly when you're ready to participate.
+
+Go talk to the owner of the social media platform and ask them to remove the group size limit.
+
 ## TL;DR
 
 We prioritize engaged members. Left quietly? Come back loudly! 🚀
