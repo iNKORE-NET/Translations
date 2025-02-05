@@ -10,7 +10,7 @@ Fo other platforms, we haven't set up the channels yet, which means you can talk
 
 ## How It Works
 
-Off-topic discussions and topics that don't fit other channels should be only discussed in the `General`, `Off-Topic` or `Entertainment` channels. These channels are designed for casual conversations and off-topic discussions. All non-work, non-technical, or casual chatter (e.g., jokes, hobbies, random questions) must go here as well. These stuff are strictly prohibited in other channels.
+Off-topic discussions and topics that don't fit other channels should be only discussed in the `General`, `Off-Topic` or `Entertainment` channels. These channels are designed for casual conversations and off-topic discussions. All non-work, non-technical, or casual chatter (e.g., jokes, hobbies, random questions) must go here as well. These stuff are strictly prohibited in other channels. Product-related topics are not allowed in the `General`, `Off-Topic` or `Entertainment` channels.
 
 Only discuss topics directly related to the <u>channel's purpose</u>. *e.g., "Desktop Development" → desktop coding/software talk only (**Strictly technical**, and no mobile or web development, which have their own channels)*. Post in the correct channel. If unsure, ask moderators first. No unrelated discussions (e.g., memes, off-topic questions).
 
