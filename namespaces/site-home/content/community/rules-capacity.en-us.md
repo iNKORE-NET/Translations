@@ -26,6 +26,6 @@ Those violating our Community Guidelines
 
 **Our Stance**: We won't create Group #2, #3, etc. Focused, active hubs > multiple dead chats.
 
----
+## TL;DR
 
-**TL;DR**: We prioritize engaged members. Left quietly? Come back loudly! 🚀
+We prioritize engaged members. Left quietly? Come back loudly! 🚀
