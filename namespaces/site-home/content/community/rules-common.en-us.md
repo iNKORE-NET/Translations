@@ -8,6 +8,8 @@
 
 **Mind Your Energy**: Negativity should be respected, however, spreading it around is really not cool. Keep it to yourself. Treat everyone, including staff, <u>with respect and kindness</u>.
 
+**Every Inch Counts**: No <u>spamming, or sending the same and meaningless messages</u> (like some stickers, etc.; also those where one person says something and then a bunch of people follow up saying the same thing). The screen space is public and limited, it's not your home, you can't just take it. Boring spamming will only waste the time of those who are really looking for information, and make the group chaotic. Also, please do not split one message into multiple messages, this will make the group messy, please try to express the complete meaning in one message.
+
 ## 2. Content Standards
 
 **Never Talk about State Affairs**: Avoid discussing <u>politics, religion, race, sexuality, or other sensitive topics</u>. This includes sharing content that could be considered illegal or harmful. Neither praise, comment, nor criticize any political, religion party, figures, events, or any other sensitive topics.
@@ -17,6 +19,8 @@
 **Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit (such as sexual, bloody content), or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remeber that <u>kids of all ages</u> might be in the group, so please <u>keep it clean</u>.
 
 **No Plagiarism**: Do not share content that is <u>not yours without proper credit</u>. This includes copying, stealing, or claiming someone else's work as your own.
+
+**No Watering**: If you want to send "bubble" text or similar stickers in the group from time to time, then please do not join this group, we do not welcome any watering behavior. If you want to find a place where you can water, then please create a group yourself, or join other groups that allow watering. We don't need you to "liven up the atmosphere", what we need is meaningful discussion and communication. Our community is not for you to "play around", this is a serious place, except for the general and entertainment channels.
 
 ## 3. Trust & Authenticity
 
