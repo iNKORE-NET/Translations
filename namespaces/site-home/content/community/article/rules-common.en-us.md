@@ -2,7 +2,7 @@
 
 **No Spamming or Disruptive Behavior**: Avoid excessive messaging, frequent image posting, irrelevant links, inciting drama, personal attacks, toxic remarks, or harassment.
 
-**No External Sharing**: Do not <u>screenshot or share chat logs</u> outside the community to provoke conflict or public discussion. We are not responsible for anything members share outside the group. If you have seen anyone sharing chat logs to other groups or platforms, please report it to the admins. You will be rewarded for your help, and the person who shared the chat logs will be <u>immediately banned</u>.
+**No External Sharing**: Do not <u>screenshot or share chat logs</u> outside the community to provoke conflict or public discussion when not approved by the admins and other involved members. We are not responsible for anything members share outside the group. If you have seen anyone sharing chat logs to other groups or platforms, please report it to the admins. You will be rewarded for your help, and the person who shared the chat logs will be <u>immediately banned</u>.
 
 **Keep Conflicts In-House**: Any <u>disputes or disagreements</u> that do not have a positive impact on our company, it's services or products, most members in the group, or the development of humanity and technology should be resolved privately. Do not involve other members or admins unless necessary. Doxxing, threatening, or blackmailing is strictly prohibited.
 
@@ -21,6 +21,8 @@
 **No Plagiarism**: Do not share content that is <u>not yours without proper credit</u>. This includes copying, stealing, or claiming someone else's work as your own.
 
 **No Watering**: If you want to send "bubble" text or similar stickers in the group from time to time, then please do not join this group, we do not welcome any watering behavior. If you want to find a place where you can water, then please create a group yourself, or join other groups that allow watering. We don't need you to "liven up the atmosphere", what we need is meaningful discussion and communication. Our community is not for you to "play around", this is a serious place, except for the general and entertainment channels.
+
+**Language Preferences**: We may have different <u>language preferences for different chat platforms that you should always follow</u>, which are listed at the entrance of the invite link. If there is no language preference, you may use your preferred language, but please be aware that not everyone may understand it. If you are asked to switch to a different language, please respect the request.
 
 ## 3. Trust & Authenticity
 
