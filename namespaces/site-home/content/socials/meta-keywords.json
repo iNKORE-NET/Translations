@@ -1,0 +1,5 @@
+// HTML keywords tag, always use ASCII commas to separate keywords
+{
+    "en-US": "social media, follow, official account, inkore, news",
+    "zh-CN": "社交媒体, 关注, 官方账号, inkore, 新闻"
+}
