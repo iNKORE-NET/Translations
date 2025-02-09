@@ -1,0 +1,7 @@
+// Product: iNKORE.UI.WPF.Modern
+// Author: Lin
+
+{
+    "en-US": "Beautiful control set, with standard WinUI 3 style. After configurations referring to the docs, I can actually edit the control directly in the XAML Designer, and the control theming is quite convenient. Microsoft is still working on it, but you guys have already made it.",
+    "zh-CN": "漂亮的控件集，标准的 WinUI 3 风格。参照文档配置后，其实可以直接在 XAML Designer 中编辑控件，控件主题设置也挺方便的。微软官方到现在还在画饼，不过你们已经做到了。",
+}

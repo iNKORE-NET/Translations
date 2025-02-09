@@ -1,0 +1,5 @@
+// HTML keywords tag, always use ASCII commas to separate keywords
+{
+    "en-US": "contact, contact us, email, inkore, phone, form, social media, community, question, information, opportunity, collaborate, help",
+    "zh-CN": "联系, 联系我们, 电子邮件, inkore, 电话, 表格, 社交媒体, 社区, 问题, 信息, 机会, 合作, 帮助"
+}
