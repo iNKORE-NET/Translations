@@ -1,0 +1,6 @@
+// HTML keywords tag, always use ASCII commas to separate keywords
+
+{
+    "en-US": "inkore, inkore studios, studios, home, homepage, welcome, software, filmmaking, products, introduction",
+    "zh-CN": "inkore, inkore 工作室, 工作室, 首页, 主页, 欢迎, 软件, 电影制作, 产品, 介绍"
+}
