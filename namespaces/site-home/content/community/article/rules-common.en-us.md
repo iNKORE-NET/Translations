@@ -12,15 +12,15 @@
 
 ## 2. Content Standards
 
-**Never Talk about State Affairs**: Avoid discussing <u>politics, religion, race, sexuality, or other sensitive topics</u>. This includes sharing content that could be considered illegal or harmful. Neither praise, comment, nor criticize any political, religion party, figures, events, or any other sensitive topics.
+**Never Talk about State Affairs**: Avoid discussing <u>nations, politics, religion, race, sexuality, or other sensitive topics</u>. This includes sharing content that could be considered illegal or harmful. Neither praise, comment, nor criticize any nations, political, religion party, figures, events, or any other sensitive topics, as this may lead to endless trouble for you, us, and others in the group.
 
-**Zero Tolerance for Illegal Content**: Do not share or promote <u>illegal activities</u>, including piracy, hacking, or any form of criminal behavior. You should also follow the rules of the region the <u>chat platform is based in</u>. *(For example, if the chat platform is based in the US, you should follow US laws; if the chat platform is based in CN, you should follow the Chinese laws, where some websites are not allowed to be accessed by some means.)*
+**Zero Tolerance for Illegal Content**: Do not share or promote <u>illegal activities</u>, including piracy, hacking, or any form of criminal behavior. You should also follow the rules of the region the <u>chat platform is based in</u>. *(For example, if the chat platform is based in the US, you should follow US laws; if the chat platform is based in CN, you should follow the Chinese laws, where some websites are not allowed to be accessed by some means.)* If your illegal content leads to legal liability, group violations, or other losses for us, we will hold you accountable in a serious manner.
 
-**Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit (such as sexual, bloody content), or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remeber that <u>kids of all ages</u> might be in the group, so please <u>keep it clean</u>.
+**Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit (such as sexual, bloody content, including but not limited to showing, implying sexual activity, related body parts, etc.), disgusting or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remeber that <u>kids of all ages</u> are in the group, so please <u>keep it clean</u>.
 
 **No Plagiarism**: Do not share content that is <u>not yours without proper credit</u>. This includes copying, stealing, or claiming someone else's work as your own.
 
-**No Watering**: If you want to send "bubble" text or similar stickers in the group from time to time, then please do not join this group, we do not welcome any watering behavior. If you want to find a place where you can water, then please create a group yourself, or join other groups that allow watering. We don't need you to "liven up the atmosphere", what we need is meaningful discussion and communication. Our community is not for you to "play around", this is a serious place, except for the general and entertainment channels.
+**No Watering**: If you want to send "bubble" text or similar stickers in the group from time to time, then please do not join this group, we do not welcome any watering behavior. If you want to find a place where you can water, then please create a group yourself, or join other groups that allow watering. We don't need you to "liven up the atmosphere", what we need is meaningful discussion and communication. Our community is not for you to "play around", this is a serious place, except for the chit-chat and entertainment channels.
 
 **Language Preferences**: We may have different <u>language preferences for different chat platforms that you should always follow</u>, which are listed at the entrance of the invite link. If there is no language preference, you may use your preferred language, but please be aware that not everyone may understand it. If you are asked to switch to a different language, please respect the request.
 
@@ -40,7 +40,7 @@
 
 ## The Finale
 
-If you have violated any of the rules above, you will be warned, muted, kicked, or banned based on the severity of the violation, and the message will be immediately deleted. If you witness any violations, please report them to the admins.
+If you have violated any of the rules above, you will be warned, muted, kicked, or banned based on the severity of the violation, and the message will be immediately deleted. If your actions lead to any losses for us, including but not limited to economic, reputational, or legal liabilities, we will hold you accountable to the fullest extent. If you witness any violations, please report them to the admins.
 
 The rules are subject to change, and we reserve the right to enforce them at our discretion. Please keep an eye on the rules in our [official website](https://www.inkore.net/community). All rules are subject to the latest version on the official website. These rules apply to all platforms, groups, and communities we manage. We may have additional rules for specific chat platforms, which are listed at the entrance of the invite link.
 
