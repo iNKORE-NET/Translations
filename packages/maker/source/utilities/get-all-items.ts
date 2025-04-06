@@ -56,34 +56,42 @@ export function getAllItems(parentDir: string = namespaceRootPath)
 
 export function readItemData(filePath: string, locale: Locale)
 {
-    let basename = path.basename(filePath);
-
-    const ext = path.extname(basename).toLowerCase();
-    let data: string | null = null;
-    let type: "markdown" | "plaintext" = "plaintext";
-    let fileType: "md" | "txt" | "json" = "txt";
-    const dataContent = fs.readFileSync(filePath, "utf-8");
-    if ([".json", ".json5"].includes(ext))
+    try
     {
-        basename = basename.substring(0, basename.length - ext.length);
-        const dataObject = JSON5.parse(dataContent);
-        data = dataObject[locale];
-        type = "plaintext";
-        fileType = "json";
-    }
-    else if ([".txt", ".md"].includes(ext))
-    {
-        const spl = basename.split(".");
-        const itemLocale = spl[spl.length - 2];
+        let basename = path.basename(filePath);
 
-        if (itemLocale.toLowerCase() == locale.toLowerCase())
+        const ext = path.extname(basename).toLowerCase();
+        let data: string | null = null;
+        let type: "markdown" | "plaintext" = "plaintext";
+        let fileType: "md" | "txt" | "json" = "txt";
+        const dataContent = fs.readFileSync(filePath, "utf-8");
+        if ([".json", ".json5"].includes(ext))
         {
-            basename = basename.substring(0, basename.length - ext.length - itemLocale.length - 1);
-            data = dataContent;
-            type = ext === ".md" ? "markdown" : "plaintext";
-            fileType = ext === ".md" ? "md" : "txt";
+            basename = basename.substring(0, basename.length - ext.length);
+            const dataObject = JSON5.parse(dataContent);
+            data = dataObject[locale];
+            type = "plaintext";
+            fileType = "json";
         }
-    }
+        else if ([".txt", ".md"].includes(ext))
+        {
+            const spl = basename.split(".");
+            const itemLocale = spl[spl.length - 2];
 
-    return data === null ? null : { basename, data, dataContent, type, fileType };
+            if (itemLocale.toLowerCase() == locale.toLowerCase())
+            {
+                basename = basename.substring(0, basename.length - ext.length - itemLocale.length - 1);
+                data = dataContent;
+                type = ext === ".md" ? "markdown" : "plaintext";
+                fileType = ext === ".md" ? "md" : "txt";
+            }
+        }
+
+        return data === null ? null : { basename, data, dataContent, type, fileType };
+    }
+    catch (e)
+    {
+        console.error(`Error reading file ${filePath}:`, e);
+        throw e;
+    }
 }
