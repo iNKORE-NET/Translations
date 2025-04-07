@@ -1,4 +1,4 @@
 {
-    "en-US": "This application is not supported on mobile devices yet. We're working on it and the mobile version will be available in the future. However, as of now, we're afraid we can't provide the experience you deserve.",
-    "zh-CN": "该应用程序尚不支持移动设备。我们正在努力开发，移动版本将在未来推出。但是，目前我们恐怕无法提供您应得的体验。",
+    "en-US": "This application is not supported on mobile devices yet. We're working on it and the mobile version will be available in the future. However, as of now, we're afraid we can't provide the experience you deserve. You can choose to ignore this warning and force the application to run, but it may lead to unpredictable disasters.",
+    "zh-CN": "该应用程序尚不支持移动设备。我们正在努力开发，移动版本将在未来推出。但是，目前我们恐怕无法提供您应得的体验。你可以选择忽略此警告，并且强行使用该应用程序，但这可能会会导致不可预测的灾难。",
 }
