@@ -8,7 +8,7 @@
 
 **Mind Your Energy**: Negativity should be respected, however, spreading it around is really not cool. Keep it to yourself. Treat everyone, including staff, <u>with respect and kindness</u>.
 
-**Every Inch Counts**: No <u>spamming, or sending the same and meaningless messages</u> (like some stickers, etc.; also those where one person says something and then a bunch of people follow up saying the same thing). The screen space is public and limited, it's not your home, you can't just take it. Boring spamming will only waste the time of those who are really looking for information, and make the group chaotic. Also, please do not split one message into multiple messages, this will make the group messy, please try to express the complete meaning in one message.
+**Every Inch Counts**: No <u>spamming, or sending the same and meaningless messages</u> (like some stickers, etc.; also those repeaters, where one person says something and then a bunch of people follow up saying the same thing). The screen space is public and limited, it's not your home, you can't just take it. Boring spamming will only waste the time of those who are really looking for information, and make the group chaotic. Also, please do not split one message into multiple messages, this will make the group messy, please try to express the complete meaning in one message.
 
 ## 2. Content Standards
 
