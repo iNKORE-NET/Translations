@@ -16,4 +16,8 @@ Only discuss topics directly related to the <u>channel's purpose</u>. *e.g., "De
 
 Product-specific channels are for <u>discussing the product only</u>, this includes feedback, asking for help, suggestions, bug reports, tips & tricks sharing, and more. *e.g., "MCSkinn" → only talk about MCSkinn, Minecraft skinning. Anything else such as memes, jokes, Minecraft gameplay, mods, or other games and products should be discussed in the appropriate channels.* Do NOT discuss a product in the wrong channel.
 
+### Special Notes
+
+- Minecraft game content, if not related to skins or texture packs, should be discussed in the off-topic channel **not in the MCSkinn** channel.
+
 Posts in wrong channels will be removed or moved to the correct channel. Repeated offenses will result in a warning, mute, or ban.
