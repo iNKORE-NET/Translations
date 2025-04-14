@@ -1,0 +1,41 @@
+{
+    "en-US":
+    [
+        "Inkways is your home for all your ideasm knowledge and creativity. It is a powerful workspace and toolset that allows you to take notes, host meetings, and create presentations.",
+        "The Inkways bundle comes with the main app, blackboard, PowerPoint add-in, screen annotator, and a document camera app.",
+
+        { "type": "checklist", "items":
+            [
+                "Fixed or infinite canvas, free board or Word-like document, you choose",
+                "Personal & team workspaces, organize your files, create your knowledge base",
+                "Smart handwriting recognition and optimizations, write like a pro",
+                "Use your familiar ink pose in PowerPoint, video camera and anywhere else*",
+                "High versatility, flexibility gives granular control for different use cases",
+            ]
+        },
+
+        "Project Inkways is currently under early development, and we are working hard to make it the best it can be. Just sit tight and wait for the glorious release!",
+
+        { "type": "caption", "content": "A genuine copy of Microsoft Office is required to use the Inkways add-in for PowerPoint; you need a supported camera device installed to use the document camera app.\r\niNKORE Studios is not affiliated with Microsoft Corporation, and the Inkways add-in is not endorsed by Microsoft Corporation." },
+    ],
+
+    "zh-CN":
+    [
+        "Inkways 是你所有想法、知识和创造力的家。它是一个强大的工作空间和工具集，可以让你做笔记、召开会议和创建演示文稿。",
+        "Inkways 套件包含主应用程序、黑板、PowerPoint 加载项、桌面批注工具箱和视频展台客户端。",
+
+        { "type": "checklist", "items":
+            [
+                "固定或无限画布，自由白板或流式布局，你来选择",
+                "个人和团队工作区，组织你的文件，创建你的知识库",
+                "智能手写识别和优化，像专业人士一样书写",
+                "高通用性，灵活性与高度自定义的能力为不同场景和人群提供细粒度控制",
+                "在 PowerPoint、摄像头和其他地方使用你熟悉的姿势*",
+            ]
+        },
+
+        "Inkways 项目目前处于早期开发阶段，我们正在努力使其达到最佳状态。请耐心等待辉煌的发布！",
+
+        { "type": "caption", "content": "使用 Inkways 套件中的 PowerPoint 加载项需要本机一份已激活的 Microsoft Office 副本；使用视频展台客户端需要安装支持的摄像头设备。\r\niNKORE Studios 与 Microsoft Corporation 没有任何关联。" },
+    ]
+}

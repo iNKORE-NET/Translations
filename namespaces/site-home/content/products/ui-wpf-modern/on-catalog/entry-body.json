@@ -1,0 +1,29 @@
+{
+    "en-US":
+    [
+        "Fluent Design is no longer exclusive to WinUI, UWP and Windows 10/11. With the 1:1 replica of WinUI, iNKORE.UI.WPF.Modern is the perfect solution for developers who want to create beautiful and modern applications with WPF.",
+        { "type": "checklist", "items":
+            [
+                "Authentic Fluent 2 Design System (Just like Windows UI)",
+                "Pure WPF Implementation, no mandatory UWP or WinUI dependencies",
+                "Flexible and fully customizable themes to match your brand",
+                "High Compatibility, works anywhere from Windows 7 to Windows 11",
+                "Growing number of controls, and more to come in the future",
+                "Open-Source, community-driven development, everyone contributes",
+            ] },
+    ],
+
+    "zh-CN":
+    [
+        "Fluent Design 不再是 WinUI、UWP 和 Windows 10/11 的专属。通过 iNKORE.UI.WPF.Modern 的 1:1 WinUI 完美复刻，开发人员可以轻松创建美观且现代的 WPF 应用程序。",
+        { "type": "checklist", "items":
+            [
+                "真实的 Fluent 2 设计系统 (就像 Windows UI 一样)",
+                "纯 WPF 实现，无强制 UWP 或 WinUI 依赖",
+                "灵活且完全可定制的主题，更好地匹配您的品牌",
+                "高兼容性，低至 Windows 7 上至 Windows 11 均可使用",
+                "不断增长的控件数量，未来会有更多控件",
+                "开源软件，社区驱动的开发，每个人都可以参与",
+            ] },
+    ]
+}

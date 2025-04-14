@@ -1,0 +1,29 @@
+{
+    "en-US":
+    [
+        "Unlock the full potential of Rollup with this growing collection of plugins that handle common development tasks. Designed to enhance your development experience, these plugins streamline your workflow and boost performance.",
+        { "type": "checklist", "items":
+            [
+                "Lightweight integration with your existing Rollup workflow.",
+                "Import only what you need, when you need it, no bloatware.",
+                "Simplify configuration with user-friendly options",
+                "New plugins added regularly, driven by community & modern trends",
+            ] },
+
+        "The Rollup plugins collection is our new open-source baby - fresh out of the dev oven! We're just getting started, and your feedback shapes its future. Contribute on GitHub or suggest a plugin to help us level up!"
+    ],
+
+    "zh-CN":
+    [
+        "通过这个不断增长的插件集合，释放 Rollup 的全部潜力，这些插件处理常见的开发任务。旨在增强您的开发体验，这些插件简化了工作流程并提高了性能。",
+        { "type": "checklist", "items":
+            [
+                "与现有 Rollup 工作流程的轻量级集成。",
+                "仅在需要时导入所需内容，没有臃肿的软件。",
+                "使用用户友好的选项简化配置",
+                "定期添加新插件，由社区和现代趋势驱动",
+            ] },
+
+        "Rollup 插件集合是我们新的开源婴儿 - 刚从开发烤箱里出来！我们才刚刚开始，您的反馈塑造了它的未来。在 GitHub 上贡献或建议一个插件来帮助我们升级！"
+    ]
+}
