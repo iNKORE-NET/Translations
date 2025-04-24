@@ -16,6 +16,18 @@ By accessing translated materials, you acknowledge and agree that:
 
 3. Legal rights, obligations, or interpretations shall be derived exclusively from the English (U.S.) source.
 
+## Date and Time Formats
+
+Throughout our website, products, and all promotional materials, the following standard date and time formats are used as defaults:
+
+1. **Default Date Format**: MM/dd/yyyy (e.g., `05/15/2023` represents May, the 15th day of the year 2023)
+
+2. **Default Time Format**: HH:mm:ss (military time, e.g., `14:30:00` represents 2:30 in the afternoon)
+
+These formats apply when no other specific format is clearly identifiable. In some contexts where a different format is clearly established and consistently used, that established format will take precedence for that specific context only.
+
+All scheduled events, deadlines, promotions, and time-sensitive information should be interpreted according to the applicable format, defaulting to the standards above when not otherwise specified.
+
 ## Updates & Amendments
 
 The English (U.S.) version of our content may be revised, updated, or supplemented without prior notice. Translated versions may not reflect these changes in real time.
