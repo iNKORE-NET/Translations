@@ -32,6 +32,8 @@ Try to engage more in the group if you can. Now's the time to speak up!
 
 Add our offical website to your bookmarks, leave quietly, and come back loudly when you're ready to participate.
 
+Choose a platform with no member limits. For example, Discord and Telegram have much looser capacity restrictions than QQ does.
+
 Go talk to the owner of the social media platform and ask them to remove the group size limit.
 
 ## TL;DR
