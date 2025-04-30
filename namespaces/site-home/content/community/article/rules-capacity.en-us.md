@@ -12,8 +12,6 @@ Accounts inactive for too long
 
 Members who only "lurk" (read but never engage), or who engage in ways that don't contribute to the group (e.g., spamming)
 
-Those violating our Community Guidelines
-
 ## Removal ≠ Rejection
 
 **You're Always Welcome Back!** If removed, simply rejoin via the original invite link when you're ready to participate. No hard feelings - we're just making room for fresh voices!
