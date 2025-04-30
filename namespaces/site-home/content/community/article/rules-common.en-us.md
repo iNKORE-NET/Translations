@@ -16,7 +16,7 @@
 
 **Zero Tolerance for Illegal Content**: Do not share or promote <u>illegal activities</u>, including piracy, hacking, or any form of criminal behavior. You should also follow the rules of the region the <u>chat platform is based in</u>. *(For example, if the chat platform is based in the US, you should follow US laws; if the chat platform is based in CN, you should follow the Chinese laws, where some websites are not allowed to be accessed by some means.)* If your illegal content leads to legal liability, group violations, or other losses for us, we will hold you accountable in a serious manner.
 
-**Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit (such as sexual, bloody content, including but not limited to showing, implying sexual activity, related body parts, etc.), disgusting or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remeber that <u>kids of all ages</u> are in the group, so please <u>keep it clean</u>.
+**Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit (such as sexual, bloody content, including but not limited to showing, implying sexual activity, related body parts, etc.), disgusting or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remember that <u>kids of all ages</u> are in the group, so please <u>keep it clean</u>.
 
 **No Plagiarism**: Do not share content that is <u>not yours without proper credit</u>. This includes copying, stealing, or claiming someone else's work as your own.
 

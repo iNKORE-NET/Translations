@@ -1,4 +1,4 @@
-As you know, some social media plaforms may limit how many members you can have in a group. To ensure fair access and lively discussions in these platform-limited groups, we have set the following rules for capacity:
+As you know, some social media platforms may limit how many members you can have in a group. To ensure fair access and lively discussions in these platform-limited groups, we have set the following rules for capacity:
 
 ## Active Membership Policy
 
@@ -30,7 +30,7 @@ Those violating our Community Guidelines
 
 Try to engage more in the group if you can. Now's the time to speak up!
 
-Add our offical website to your bookmarks, leave quietly, and come back loudly when you're ready to participate.
+Add our official website to your bookmarks, leave quietly, and come back loudly when you're ready to participate.
 
 Choose a platform with no member limits. For example, Discord and Telegram have much looser capacity restrictions than QQ does.
 

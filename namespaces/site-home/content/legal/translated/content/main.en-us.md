@@ -4,7 +4,7 @@ All content, terms, conditions, and policies published by iNKORE! — including 
 
 ## Translations for Convenience
 
-Translations of our content are provided solely for informational convenience. While we strive to ensure accuracy, translated materials may contain errors, omissions, or contextual inaccuracies. Such translations**do not constitute legally binding commitments, warranties, or guarantees** by iNKORE!.
+Translations of our content are provided solely for informational convenience. While we strive to ensure accuracy, translated materials may contain errors, omissions, or contextual inaccuracies. Such translations **do not constitute legally binding commitments, warranties, or guarantees** by iNKORE!.
 
 ## No Reliance on Translations
 
