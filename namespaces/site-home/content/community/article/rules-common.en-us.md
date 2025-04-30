@@ -2,13 +2,13 @@
 
 **No Spamming or Disruptive Behavior**: Avoid excessive messaging, frequent image posting, irrelevant links, inciting drama, personal attacks, toxic remarks, or harassment.
 
-**No External Sharing**: Do not <u>screenshot or share chat logs</u> outside the community to provoke conflict or public discussion when not approved by the admins and other involved members. We are not responsible for anything members share outside the group. If you have seen anyone sharing chat logs to other groups or platforms, please report it to the admins. You will be rewarded for your help, and the person who shared the chat logs will be <u>immediately banned</u>.
+**No External Sharing**: Do not <span style="color:red;">screenshot or share chat logs <u>(including forwarding, screenshots, etc. of group chat history)</u> <u>outside the community (such as to other groups, other forums, etc.)</u></span> to provoke conflict or public discussion when not approved by the admins and other involved members. We are not responsible for anything members share outside the group. If you have seen anyone sharing chat logs to other groups or platforms, please report it to the admins. You will be rewarded for your help, and the person who shared the chat logs will be <u>immediately banned</u>.
 
 **Keep Conflicts In-House**: Any <u>disputes or disagreements</u> that do not have a positive impact on our company, it's services or products, most members in the group, or the development of humanity and technology should be resolved privately. Do not involve other members or admins unless necessary. Doxxing, threatening, or blackmailing is strictly prohibited.
 
 **Mind Your Energy**: Negativity should be respected, however, spreading it around is really not cool. Keep it to yourself. Treat everyone, including staff, <u>with respect and kindness</u>.
 
-**Every Inch Counts**: No <u>spamming, or sending the same and meaningless messages</u> (like some stickers, etc.; also those repeaters, where one person says something and then a bunch of people follow up saying the same thing). The screen space is public and limited, it's not your home, you can't just take it. Boring spamming will only waste the time of those who are really looking for information, and make the group chaotic. Also, please do not split one message into multiple messages, this will make the group messy, please try to express the complete meaning in one message.
+**Every Inch Counts**: No <span style="color:red;">spamming, or sending the same and meaningless messages</span> (like long essays or repetitive "666", "666666", "666666666", and some stickers, etc.; also those <span style="color:red;">repeaters, where one person says something and then a bunch of people follow up saying the same thing</span>). The screen space is public and limited, it's not your home, you can't just take it. Boring spamming will only waste the time of those who are really looking for information, and make the group chaotic. Also, please do not split one message into multiple messages, this will make the group messy, please try to express the complete meaning in one message.
 
 ## 2. Content Standards
 
@@ -16,11 +16,11 @@
 
 **Zero Tolerance for Illegal Content**: Do not share or promote <u>illegal activities</u>, including piracy, hacking, or any form of criminal behavior. You should also follow the rules of the region the <u>chat platform is based in</u>. *(For example, if the chat platform is based in the US, you should follow US laws; if the chat platform is based in CN, you should follow the Chinese laws, where some websites are not allowed to be accessed by some means.)* If your illegal content leads to legal liability, group violations, or other losses for us, we will hold you accountable in a serious manner.
 
-**Family Safe**: Keep content <u>family-friendly</u>, avoid NSFW, explicit (such as sexual, bloody content, including but not limited to showing, implying sexual activity, related body parts, etc.), disgusting or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remember that <u>kids of all ages</u> are in the group, so please <u>keep it clean</u>.
+**Family Safe**: Keep content <u>family-friendly</u>, avoid <span style="color:red;">NSFW, explicit (such as sexual, bloody content, including but not limited to showing, implying sexual activity, related body parts, etc.)</span>, disgusting or offensive material. Violence, pornography, or hate speech is strictly prohibited. Remember that <u>kids of all ages</u> are in the group, so please <u>keep it clean</u>.
 
 **No Plagiarism**: Do not share content that is <u>not yours without proper credit</u>. This includes copying, stealing, or claiming someone else's work as your own.
 
-**No Watering**: If you want to send "bubble" text or similar stickers in the group from time to time, then please do not join this group, we do not welcome any watering behavior. If you want to find a place where you can water, then please create a group yourself, or join other groups that allow watering. We don't need you to "liven up the atmosphere", what we need is meaningful discussion and communication. Our community is not for you to "play around", this is a serious place, except for the chit-chat and entertainment channels.
+**No Watering**: If you want to send "bubble" text or similar stickers in the group from time to time, then please do not join this group, we <span style="color:red;">do not welcome any watering behavior</span>, similar behavior includes but is not limited to <span style="color:red;">QQ group's check-in, clock-in features, bot check-ins, song requests, etc.</span> If you want to find a place where you can water, then please create a group yourself, or join other groups that allow watering. We don't need you to "liven up the atmosphere", what we need is meaningful discussion and communication. Our community is not for you to "play around", this is a serious place, except for the chit-chat and entertainment channels.
 
 **Language Preferences**: We may have different <u>language preferences for different chat platforms that you should always follow</u>, which are listed at the entrance of the invite link. If there is no language preference, you may use your preferred language, but please be aware that not everyone may understand it. If you are asked to switch to a different language, please respect the request.
 
@@ -28,15 +28,17 @@
 
 **No Impersonation**: Never pretend to be <u>official staff or representatives</u>, or do anything that could mislead others.
 
+**No Automated Users**: <font color="red">Bots and automated accounts are not allowed</font> to join any of our communities unless explicitly permitted by administrators. Unauthorized bots may ruin the experience for other members and steal the chat history, and we will take action against them. Anyone who invites or adds bots to the group will be immediately banned.
+
 **Fact-Check First**: Refrain from spreading unverified claims or misinformation. You should be responsible for the information you share. If you are not sure about the information, please do not share it.
 
 **No Harmful Actions**: Do not share content that <u>endangers members' safety or the group's integrity</u>. This includes malicious links, phishing, or scams.
 
 ## 4. Profit & Promotion
 
-**No Ads or Promotions**: Unsanctioned <u>ads</u>, product/service <u>recommendations</u>, buying/selling <u>requests</u>, or idle trading <u>promotions</u> are not allowed. This also includes sharing referral links, affiliate links, or any other form of <u>self-promotion</u>. *(e.g. "Check out my new video", "Join my Discord server", "I'm selling this item", "Help me build my app", "I'm looking for someone to do this for me, I'll pay you", "I'm new here, this is my channel, please subscribe", etc.)*
+**No Ads or Promotions**: Unsanctioned <u>ads</u>, product/service <u>recommendations</u>, buying/selling <u>requests</u>, or idle trading <u>promotions</u> are not allowed. This also includes sharing referral links, affiliate links, or any other form of <u>self-promotion</u>. *(e.g. "<span style="color:red;">Check out my new video</span>", "Join my Discord server", "<span style="color:red;">I made an xxx, everyone is welcome to check it out</span>", "I'm selling this item", "Help me build my app", <span style="color:red;">various commissions/requests</span>, "I'm looking for someone to do this for me, I'll pay you", "<span style="color:red;">I'm new here, this is my channel, please subscribe</span>", "If you need anything, you can DM me", etc.)*
 
-**No Exploitative Behavior**: Do not <u>take advantage of the community for personal gain</u>, such as asking for free work, services, recruitment, paid services, or any other form of exploitation.
+**No Exploitative Behavior**: Do not <span style="color:red;">take advantage of the community for personal gain</span>, such as asking for free work, services, recruitment, paid services, or any other form of exploitation.
 
 ## The Finale
 
