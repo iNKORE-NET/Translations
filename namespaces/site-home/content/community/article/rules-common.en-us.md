@@ -8,6 +8,8 @@
 
 **Mind Your Energy**: Negativity should be respected, however, spreading it around is really not cool. Keep it to yourself. Treat everyone, including staff, <u>with respect and kindness</u>.
 
+**Respect Different Opinions**: <span style="color:red;">Always respect others and their opinions, even if they don't seem right to you</span>. This includes respecting others' sexuality, lifestyle choices, beliefs, and other personal matters. Constructive discussions are welcome, but always ensure to remain respectful.
+
 **Every Inch Counts**: No <span style="color:red;">spamming, or sending the same and meaningless messages</span> (like long essays or repetitive "666", "666666", "666666666", and some stickers, etc.; also those <span style="color:red;">repeaters, where one person says something and then a bunch of people follow up saying the same thing</span>). The screen space is public and limited, it's not your home, you can't just take it. Boring spamming will only waste the time of those who are really looking for information, and make the group chaotic. Also, please do not split one message into multiple messages, this will make the group messy, please try to express the complete meaning in one message.
 
 ## 2. Content Standards
@@ -28,7 +30,7 @@
 
 **No Impersonation**: Never pretend to be <u>official staff or representatives</u>, or do anything that could mislead others.
 
-**No Automated Users**: <font color="red">Bots and automated accounts are not allowed</font> to join any of our communities unless explicitly permitted by administrators. Unauthorized bots may ruin the experience for other members and steal the chat history, and we will take action against them. Anyone who invites or adds bots to the group will be immediately banned.
+**No Automated Users**: <span style="color:red;">Bots and automated accounts are not allowed</span> to join any of our communities unless explicitly permitted by administrators. Unauthorized bots may ruin the experience for other members and steal the chat history, and we will take action against them. Anyone who invites or adds bots to the group will be immediately banned.
 
 **Fact-Check First**: Refrain from spreading unverified claims or misinformation. You should be responsible for the information you share. If you are not sure about the information, please do not share it.
 
