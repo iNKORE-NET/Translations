@@ -1,0 +1,4 @@
+{
+    "en-US": "Always check for HTTPS in the URL. If the site doesn't have a valid SSL certificate, it's a red flag - this usually means that your connection to us has been hijacked and tampered with by an attacker, and does NOT mean that the website you are visiting is a fake.. We always use HTTPS for our domains.",
+    "zh-CN": "始终检查 URL 中的 HTTPS。如果网站没有有效的 SSL 证书，这就是一个危险信号 - 虽然这并不代表您所访问的网站是假冒的，但这通常意味着您与我们之间的连接已被攻击者劫持和篡改。我们始终在我们的域名上使用 HTTPS。"
+}
