@@ -1,0 +1,23 @@
+{
+    "$id": "http://schemas.inkore.net/translation-item",
+    "title": "Translation Item",
+    "description": "A translation item",
+    "type": "object",
+    "properties":
+    {
+        "en-US": { "type": [ "string", "object", "array" ] },
+        "zh-CN": { "type": [ "string", "object", "array" ] },
+        "ja-JP": { "type": [ "string", "object", "array" ] },
+        "ko-KR": { "type": [ "string", "object", "array" ] },
+        "fr-FR": { "type": [ "string", "object", "array" ] },
+        "de-DE": { "type": [ "string", "object", "array" ] },
+        "es-ES": { "type": [ "string", "object", "array" ] },
+        "it-IT": { "type": [ "string", "object", "array" ] },
+        "pt-BR": { "type": [ "string", "object", "array" ] },
+        "ru-RU": { "type": [ "string", "object", "array" ] },
+        "ar-SA": { "type": [ "string", "object", "array" ] }
+    },
+
+    "required": [ "en-US", "zh-CN" ],
+    "allowTrailingCommas": true
+}

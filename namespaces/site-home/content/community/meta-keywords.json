@@ -1,0 +1,5 @@
+// HTML keywords tag, always use ASCII commas to separate keywords
+{
+    "en-US": "community, chat, group, inkore, connect, collaborate, about, support",
+    "zh-CN": "社区, 聊天, 群组, inkore, 连接, 协作, 关于, 支持",
+}

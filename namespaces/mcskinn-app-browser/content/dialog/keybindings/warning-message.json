@@ -1,0 +1,5 @@
+{
+    "en-US": "In most browsers, certain control key combinations have been reserved for browser usage only, which means MCSkinn will NOT be able to intercept them, and you will not able to use them in the browser version of MCSkinn. For the full experience, please use the desktop version of MCSkinn instead.",
+
+    "zh-CN": "在大多数浏览器中，某些控制键组合已被保留用于浏览器使用，这意味着 MCSkinn 将无法接收并处理它们，您将无法在 MCSkinn 的浏览器版本中使用它们。要获得完整体验，请改用 MCSkinn 的桌面版本。",
+}

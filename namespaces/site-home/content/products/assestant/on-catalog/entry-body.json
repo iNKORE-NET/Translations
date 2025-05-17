@@ -1,0 +1,39 @@
+{
+    "en-US":
+    [
+        "Embedding an image or a video into an npm package seems to be no easy task, you will never predict how the assets will be handled in the end consumers (e.g. Vite and Next.js will handle the assets differently). This gives authors of control libraries, theme presets and other npm packages a headache.",
+        "Assestant is a simple solution to this problem, who seamlessly bundle images, audio, text, and more into npm packages, with consistent import behavior across frameworks and bundlers while bringing you some additional features.",
+
+        { "type": "checklist", "items":
+            [
+                "Bundler-Agnostic: Normalize asset imports for Vite, Next.js, Webpack, and others - write once, consume everywhere.",
+                "Preprocessed Metadata: Auto-calculate asset details (e.g., image dimensions) at build time - no runtime fetch needed.",
+                "Source Flexibility: Toggle between local (bundled) or remote (CDN) assets globally or per package.",
+                "Subpath Optimization: Import only what you use. Unused assets will be excluded from the final bundle.",
+            ] },
+
+        "Assestant is in its early days - a bold experiment to solve asset chaos. We need testers, pioneers, and tinkerers like you! Help us expand support for file types, bundlers, and frameworks. Your feedback doesn't just improve Assestant - it shapes the roadmap for every developer wrestling with assets tomorrow."
+    ],
+
+    "zh-CN":
+    [
+        "将图像或视频嵌入 npm 包似乎不是一件容易的事，你永远无法预测最终消费者如何处理这些资源 (例如，Vite 和 Next.js 会以不同方式处理资源)。这给控件库、主题预设和其他 npm 包的作者带来了困扰。",
+        "Assestant 是解决这个问题的简单方案，它能将图像、音频、文本等无缝地打包到 npm 包中，提供跨框架和打包工具一致的导入行为，同时带来一些额外功能。",
+
+        { "type": "checklist", "items":
+            [
+                "打包工具无关性：为 Vite、Next.js、Webpack 等标准化资源导入 - 一次编写，随处消费。",
+                "预处理元数据：在构建时自动计算资源详情 (如图像尺寸) - 无需运行时获取。",
+                "源灵活性：在全局或每个包的基础上，在本地 (打包) 或远程 (CDN) 资源之间切换。",
+                "子路径优化：仅导入你使用的内容。未使用的资源将从最终包中排除。"
+            ] },
+
+        "Assestant 还处于早期阶段 - 一个解决资源混乱的大胆尝试。我们需要像你这样的测试者、先驱者和探索者！帮助我们扩展对文件类型、打包工具和框架的支持。你的反馈不仅能改进 Assestant - 它还将塑造每个与资源搏斗的开发者的未来路线图。"
+    ]
+}
+
+
+// this is a framework that allows you to embed assets like images, audio and text files into your npm package which will later be used in a web app. this is very convenient for authors of control libraries, style presets and more. the core principles of this framework is to import the assets file with the es6 module import pattern, which is used when building with bundlers like vite, nextjs, webpack and so on. assestant normalizes the import result. (because the import result of vite is a string url pointing to the file, but nextjs returns an object containing the general information and the url is fetched by accessing src property. this makes the library author not able to import the assets without considering the end builder). 
+// there are additional features, for example, assestant will parse and analyze some information about the assets during your library package is built. this allows you to get the information (like width, height of an image file) without sending ajax request to get the actual file. this feature is originally available on nextjs, but with assestant you can do that in your library, vite apps or anywhere else because these information is already settled when you build your library package.
+// assestant uses subpath imports to make sure that in the final bundled app there're only files that you actually need, and each time you can import a single file without referenceing others, as long as your bundler supports subpath imports.
+// you can also configure assestant for certain packages to specify which source they should load the assets from. there are two modes, online and local. if the local option is selected, the url of the asset will be the file in your final app bundle. you can switch to online if your assets are from another place (like cdns), which will set the url targets to the place you pointered. these can be configed for all packages at once, or just some of them.

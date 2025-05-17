@@ -1,0 +1,4 @@
+{
+    "en-US": "Note: All statistic in this and associated site includes products that are currently unavailable (discontinued, deprecated, being refactored, etc.). The data in the section above is up to {{END_DATE}}.",
+    "zh-CN": "注意：本站及其相关联的站点中的所有统计数据包括当前不可用 (下架) 的产品 (已停产、已弃用、正在重构等)。上面所展示的数据数据截止至 {{END_DATE}}。",
+}

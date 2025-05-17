@@ -1,11 +1,19 @@
 {
     "files.associations":
     {
-        "*.json": "jsonc"
+        "*.json": "jsonc",
+        // "namespaces/**/*.json": "json5"
     },
 
     "[jsonc]":
     {
+        "editor.wordWrap": "on"
+    },
+
+    "[plaintext]":
+    {
+        "editor.unicodeHighlight.ambiguousCharacters": false,
+        "editor.unicodeHighlight.invisibleCharacters": true,
         "editor.wordWrap": "on"
     },
 
@@ -20,8 +28,12 @@
     "json.schemas":
     [
         {
-            "fileMatch": [ "data/**/*.json" ],
-            "url": "./data.schema.json"
+            "fileMatch": [ "namespaces/**/*.json" ],
+            "url": "./schemas/data.schema.json"
+        },
+        {
+            "fileMatch": [ "exports/*.json" ],
+            "url": "./schemas/export.schema.json"
         }
     ]
 }

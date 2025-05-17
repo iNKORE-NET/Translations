@@ -1,0 +1,8 @@
+{
+    // This is used as an add-on, so coreworks and mcskinn-core are not included
+    "includes":
+    [
+        "mcskinn-pack-common",
+        "mcskinn-pack-minecraft"
+    ]
+}

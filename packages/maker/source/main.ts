@@ -5,7 +5,7 @@ import Entry_Compose from "source/entries/compose";
 import Entry_Check from "source/entries/check";
 
 import chalk from "chalk";
-import { UserError } from "source/utils/user-error";
+import { UserError } from "source/utilities/user-error";
 
 let exitCode = 0;
 
@@ -42,7 +42,7 @@ try
     program.command("compose")
         .argument("[locale]", "The locale to compose. If undefined or 'all', compose all locales.", "all")
         .argument("[namespace]", "The namespace to compose. If undefined or 'all', compose all namespaces.", "all")
-        .option("-nocheck, --nocheck", "Skip the check process before composing.", false)
+        .option("--nocheck", "Skip the check process before composing.", false)
         .action((locale, namespace, options) =>
         {
             const arg_locale = locale == "all" ? undefined : checkLocale(locale);

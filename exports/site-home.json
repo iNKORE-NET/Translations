@@ -1,0 +1,7 @@
+{
+    "includes":
+    [
+        "coreworks",
+        "site-home"
+    ]
+}

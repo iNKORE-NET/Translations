@@ -1,0 +1,6 @@
+// Currently this is invisible in the UI, but it is used in the hero section of the catalog page, which is used as an accessbility helper.
+
+{
+    "en-US": "Featured Product Showcase",
+    "zh-CN": "特色产品展柜"
+}
