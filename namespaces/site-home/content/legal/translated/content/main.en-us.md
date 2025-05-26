@@ -33,3 +33,6 @@ All scheduled events, deadlines, promotions, and time-sensitive information shou
 ## Updates & Amendments
 
 The English (U.S.) version of our content may be revised, updated, or supplemented without prior notice. Translated versions may not reflect these changes in real time.
+
+<br/>
+<sub><em>Last updated: 05/08/2025</em></sub>
