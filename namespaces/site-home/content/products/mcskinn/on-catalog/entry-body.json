@@ -5,18 +5,15 @@
 
         { "type": "checklist", "items":
             [
-                "Create and edit 3D skins for Minecraft and other low-poly games",
+                "Create and edit 3D skins for Minecraft",
                 "Clean, intuitive and easy to use interface, friendly for both newbies and pros",
                 "Switch between traditional 2D and Real-time 3D editing, WYSIWYG",
-                "Powerful palette, brushes, layering and mask systems to qualify your work",
+                "Powerful palette and brushes systems to qualify your work",
                 "Built-in Minecraft models & assets for easy skin creation *1",
-                "Generic model loader for more games, and even your own-created models *2",
                 "Workspace and list features for easy management of loads of skins",
             ] },
 
-        "MCSkinn is also a fabulous choice for professional artists and game developers, as it allows you to create and edit textures for any low-poly game (as long as you have the model) and your own models.",
-
-        { "type": "caption", "content": "*1: You need to agree to additional terms from third parties to use them.\r\n*2: Only supported model formats can be loaded, please refer to the documentation.\r\n iNKORE is not affiliated with Mojang, Minecraft or any other third-parties." },
+        { "type": "caption", "content": "*1: You need to agree to additional terms from third parties to use them.\r\n iNKORE is not affiliated with Mojang, Minecraft or any other third-parties." },
     ],
 
     "zh-CN":
@@ -25,17 +22,14 @@
 
         { "type": "checklist", "items":
             [
-                "为 Minecraft 和其他低多边形游戏创建和编辑 3D 皮肤",
+                "为 Minecraft 创建和编辑 3D 皮肤",
                 "简洁、直观且易于使用的界面，新手与专业人士都能轻松上手",
                 "在传统的 2D 和实时 3D 编辑之间切换，所见即所得",
-                "强大的调色板、画笔、图层和蒙版系统来提升你的作品",
+                "强大的调色板、画笔系统来提升你的作品",
                 "内置 Minecraft 模型和资源，轻松创建皮肤 *1",
-                "通用模型加载器，支持更多游戏，甚至是你自己创建的模型 *2",
                 "工作区和列表功能，轻松分类组织和管理大量皮肤",
             ] },
 
-        "MCSkinn 也是专业艺术家和游戏开发人员的绝佳选择，因为它允许你为任何低多边形游戏 (只要你有模型) 和你自己的模型创建和编辑纹理。",
-
-        { "type": "caption", "content": "*1: 使用内置的 Minecraft 模型和资源需要同意来自第三方的额外的条款和条件。\r\n*2: 仅支持的模型格式可以加载，更多信息请参考文档。\r\n iNKORE 与 Mojang、Minecraft 或任何其他第三方没有关联。" },
+        { "type": "caption", "content": "*1: 使用内置的 Minecraft 模型和资源需要同意来自第三方的额外的条款和条件。\r\n iNKORE 与 Mojang、Minecraft 或任何其他第三方没有关联。" },
     ]
 }
