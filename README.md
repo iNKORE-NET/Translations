@@ -4,25 +4,25 @@ This repository contains the translation files for all the iNKORE applications a
 
 ## Supported Languages
 
-| 🚩 | ID | Name (English) | Native Name | Source | Priority | Notes |
-|------|-------------|-------------------------|-------------|--------|----------|-------|
-| 🇺🇸 | en-US | English (United States) | English | Official | 0 | Governing language |
-| 🇨🇳 | zh-CN | Chinese (Simplified, China) | 简体中文 (中国) | Community | 2 | Deprecated, transitioning to zh-SG |
-| 🇸🇬 | zh-SG | Chinese (Simplified, Singapore) | 简体中文 (新加坡) | Official | 1 | Replacing zh-CN |
-| 🇭🇰 | zh-HK | Chinese (Traditional, Hong Kong) | 繁體中文 (香港) | Official | 1 | - |
-| 🇹🇼 | zh-TW | Chinese (Traditional, Taiwan) | 正體中文 (台灣) | Community | 1 | - |
-| 🇯🇵 | ja-JP | Japanese | 日本語 | Official | 1 | - |
-| 🇰🇷 | ko-KR | Korean | 한국어 | Community | 1 | - |
-| 🇪🇸 | es-ES | Spanish (Spain) | Español | Community | 1 | - |
-| 🇫🇷 | fr-FR | French (France) | Français | Community | 1 | - |
-| 🇩🇪 | de-DE | German (Germany) | Deutsch | Community | 1 | - |
-| 🇵🇱 | pl-PL | Polish | Polski | Community | 2 | - |
-| 🇸🇦 | ar-SA | Arabic (Saudi Arabia) | العربية | Community | 2 | - |
-| 🇻🇳 | vi-VN | Vietnamese | Tiếng Việt | Community | 2 | - |
-| 🇲🇾 | ms-MY | Malay (Malaysia) | Bahasa Melayu | Official | 1 | - |
-| 🇮🇳 | hi-IN | Hindi (India) | हिन्दी | Community | 2 | - |
-| 🇵🇹 | pt-PT | Portuguese (Portugal) | Português | Community | 2 | - |
-| 🇷🇺 | ru-RU | Russian (Russia) | Русский | Community | 2 | Deprecated, no longer serving Russia |
+| 🚩 | ID | Native Name | Name (English) | Source | Priority | Notes |
+|------|-------------|-------------|-------------------------|--------|----------|-------|
+| 🇺🇸 | en-US | English (United States) | English (United States) | Official | 0 | Governing language |
+| 🇪🇸 | es-ES | Español (España) | Spanish (Spain) | Community | 1 | - |
+| 🇩🇪 | de-DE | Deutsch (Deutschland) | German (Germany) | Community | 1 | - |
+| 🇫🇷 | fr-FR | Français (France) | French (France) | Community | 1 | - |
+| 🇵🇱 | pl-PL | Polski (Polska) | Polish | Community | 2 | - |
+| 🇲🇾 | ms-MY | Bahasa Melayu (Malaysia) | Malay (Malaysia) | Official | 1 | - |
+| 🇨🇳 | zh-CN | 简体中文 (中国) | Chinese (Simplified, China) | Community | 2 | Deprecated, transitioning to zh-SG |
+| 🇸🇬 | zh-SG | 简体中文 (新加坡) | Chinese (Simplified, Singapore) | Official | 1 | Replacing zh-CN |
+| 🇭🇰 | zh-HK | 繁體中文 (香港) | Chinese (Traditional, Hong Kong) | Official | 1 | - |
+| 🇹🇼 | zh-TW | 正體中文 (台灣) | Chinese (Traditional, Taiwan) | Community | 1 | - |
+| 🇯🇵 | ja-JP | 日本語 (日本) | Japanese | Official | 1 | - |
+| 🇰🇷 | ko-KR | 한국어 (대한민국) | Korean | Community | 1 | - |
+| 🇷🇺 | ru-RU | Русский (Россия) | Russian (Russia) | Community | 2 | Deprecated, no longer serving Russia |
+| 🇸🇦 | ar-SA | العربية (المملكة العربية السعودية) | Arabic (Saudi Arabia) | Community | 2 | - |
+| 🇻🇳 | vi-VN | Tiếng Việt (Việt Nam) | Vietnamese | Community | 2 | - |
+| 🇮🇳 | hi-IN | हिन्दी (भारत) | Hindi (India) | Community | 2 | - |
+| 🇵🇹 | pt-PT | Português (Portugal) | Portuguese (Portugal) | Community | 2 | - |
 
 **Notes:**
 
