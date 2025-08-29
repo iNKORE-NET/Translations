@@ -4,7 +4,7 @@ This repository contains the translation files for all the iNKORE applications a
 
 ## Supported Languages
 
-| 🚩 | ID | Native Name | Name (English) | Source | Priority | Notes |
+| 🚩 | ID | Name | Name (English) | Source | Priority | Notes |
 |------|-------------|-------------|-------------------------|--------|----------|-------|
 | 🇺🇸 | en-US | English (United States) | English (United States) | Official | 0 | Governing language |
 | 🇪🇸 | es-ES | Español (España) | Spanish (Spain) | Community | 1 | - |
