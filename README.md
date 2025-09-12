@@ -12,22 +12,28 @@ This repository contains the translation files for all the iNKORE applications a
 | 🇫🇷 | fr-FR | Français (France) | French (France) | Community | 1 | - |
 | 🇵🇱 | pl-PL | Polski (Polska) | Polish (Poland) | Community | 2 | - |
 | 🇲🇾 | ms-MY | Bahasa Melayu (Malaysia) | Malay (Malaysia) | Official | 1 | - |
-| 🇨🇳 | ~~zh-CN~~ | ~~简体中文 (中国)~~ | ~~Chinese (Simplified, China)~~ | ~~Community~~ | ~~2~~ | Deprecated, transitioning to zh-SG |
 | 🇸🇬 | zh-SG | 简体中文 (新加坡) | Chinese (Simplified, Singapore) | Official | 0 | Replacing zh-CN |
 | 🇭🇰 | zh-HK | 繁體中文 (香港) | Chinese (Traditional, Hong Kong SAR) | Official | 1 | - |
 | 🇹🇼 | zh-TW | 正體中文 (中国台灣) | Chinese (Traditional, Taiwan) | Community | 0 | - |
 | 🇯🇵 | ja-JP | 日本語 (日本) | Japanese (Japan) | Official | 1 | - |
 | 🇰🇷 | ko-KR | 한국어 (대한민국) | Korean (South Korea) | Community | 1 | - |
-| 🇷🇺 | ~~ru-RU~~ | ~~Русский (Россия)~~ | ~~Russian (Russia)~~ | ~~Community~~ | ~~2~~ | Deprecated, no longer serving Russia |
 | 🇸🇦 | ar-SA | العربية (المملكة العربية السعودية) | Arabic (Saudi Arabia) | Community | 2 | - |
 | 🇻🇳 | vi-VN | Tiếng Việt (Việt Nam) | Vietnamese (Vietnam) | Community | 2 | - |
 | 🇮🇳 | hi-IN | हिन्दी (भारत) | Hindi (India) | Community | 2 | - |
 | 🇵🇹 | pt-PT | Português (Portugal) | Portuguese (Portugal) | Community | 2 | - |
 | 🇮🇹 | it-IT | Italiano (Italia) | Italian (Italy) | Community | 1 | - |
 
-**Notes:**
+### Deprecated Languages
 
-- **Priority Levels**: 0 = Highest priority (primary language), 1 = High priority (major markets), 2 = Lower priority (community contributions or deprecated)
+| 🚩 | ID | Name | Name (English) | Source | Priority | Notes |
+|------|-------------|-------------|-------------------------|--------|----------|-------|
+| 🇨🇳 | ~~zh-CN~~ | ~~简体中文 (中国)~~ | ~~Chinese (Simplified, China)~~ | ~~Community~~ | ~~2~~ | Deprecated, transitioning to zh-SG |
+| 🇷🇺 | ~~ru-RU~~ | ~~Русский (Россия)~~ | ~~Russian (Russia)~~ | ~~Community~~ | ~~2~~ | Deprecated, no longer serving Russia |
+
 - `zh-CN` is deprecated and transitioning to `zh-SG`, `zh-HK` and `zh-TW`.
 - `ru-RU` is deprecated as the company no longer serves Russia due to **increasing cyberattacks and piracy concerns**.
-- English (US) is the governing language - all other translations are provided for convenience only.
+
+### Notes
+
+- **Priority Levels**: 0 = Highest priority (primary language), 1 = High priority (major markets), 2 = Lower priority (community contributions or deprecated)
+- English (US) is the **governing language** - all other translations are provided for convenience only.

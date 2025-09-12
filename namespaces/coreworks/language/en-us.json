@@ -1,4 +1,18 @@
 {
-    "en-US": "English (US)",
-    "zh-CN": "英语 (美国)"
+    "en-US": "English (United States)",
+    "es-ES": "Inglés (Estados Unidos)",
+    "de-DE": "Englisch (Vereinigte Staaten)",
+    "fr-FR": "Anglais (États-Unis)",
+    "pl-PL": "Angielski (Stany Zjednoczone)",
+    "ms-MY": "Bahasa Inggeris (Amerika Syarikat)",
+    "zh-SG": "英语 (美国)",
+    "zh-HK": "英語 (美國)",
+    "zh-TW": "英語 (美國)",
+    "ja-JP": "英語 (アメリカ合衆国)",
+    "ko-KR": "영어 (미국)",
+    "ar-SA": "الإنجليزية (الولايات المتحدة)",
+    "vi-VN": "Tiếng Anh (Hoa Kỳ)",
+    "hi-IN": "अंग्रेज़ी (संयुक्त राज्य अमेरिका)",
+    "pt-PT": "Inglês (Estados Unidos)",
+    "it-IT": "Inglese (Stati Uniti)"
 }

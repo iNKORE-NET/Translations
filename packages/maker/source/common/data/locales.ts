@@ -7,7 +7,77 @@ export const locales =
         workinProgress: false
     },
 
-    "zh-CN":
+    "es-ES":
+    {
+        workinProgress: true
+    },
+
+    "de-DE":
+    {
+        workinProgress: true
+    },
+
+    "fr-FR":
+    {
+        workinProgress: true
+    },
+
+    "pl-PL":
+    {
+        workinProgress: true
+    },
+
+    "ms-MY":
+    {
+        workinProgress: true
+    },
+
+    "zh-SG":
+    {
+        workinProgress: true
+    },
+
+    "zh-HK":
+    {
+        workinProgress: true
+    },
+
+    "zh-TW":
+    {
+        workinProgress: true
+    },
+
+    "ja-JP":
+    {
+        workinProgress: true
+    },
+
+    "ko-KR":
+    {
+        workinProgress: true
+    },
+
+    "ar-SA":
+    {
+        workinProgress: true
+    },
+
+    "vi-VN":
+    {
+        workinProgress: true
+    },
+
+    "hi-IN":
+    {
+        workinProgress: true
+    },
+
+    "pt-PT":
+    {
+        workinProgress: true
+    },
+
+    "it-IT":
     {
         workinProgress: true
     }

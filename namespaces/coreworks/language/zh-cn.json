@@ -1,4 +1,18 @@
 {
     "en-US": "Simplified Chinese (China)",
-    "zh-CN": "简体中文 (中国)"
+    "es-ES": "Chino simplificado (China)",
+    "de-DE": "Vereinfachtes Chinesisch (China)",
+    "fr-FR": "Chinois simplifié (Chine)",
+    "pl-PL": "Chiński uproszczony (Chiny)",
+    "ms-MY": "Bahasa Cina Ringkas (China)",
+    "zh-SG": "简体中文 (中国)",
+    "zh-HK": "簡體中文 (中國)",
+    "zh-TW": "簡體中文 (中國)",
+    "ja-JP": "簡体字中国語 (中国)",
+    "ko-KR": "중국어 간체 (중국)",
+    "ar-SA": "الصينية المبسطة (الصين)",
+    "vi-VN": "Tiếng Trung giản thể (Trung Quốc)",
+    "hi-IN": "सरलीकृत चीनी (चीन)",
+    "pt-PT": "Chinês Simplificado (China)",
+    "it-IT": "Cinese Semplificato (Cina)"
 }

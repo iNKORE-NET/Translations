@@ -115,10 +115,11 @@ export function composeNamespace(locale: Locale, namespace: string, nocheck: boo
             const filePath = PathHelper.join(namespacePath, item);
 
             const { basename, data } = readItemData(filePath, locale) ?? { };
-            if (basename == undefined || data == undefined) continue;
-            
-            const keyName = path.join(path.dirname(item), basename).replace(/\\/g, "/").replaceAll("/", ".");
-            finalObject[keyName] = data;
+            if (basename && data !== undefined)
+            {
+                const keyName = path.join(path.dirname(item), basename).replace(/\\/g, "/").replaceAll("/", ".");
+                finalObject[keyName] = data;
+            }
 
             // console.log(leftLine + chalk.greenBright("○ ") + chalk.gray(`(${(i + 1).toString().padStart(allItems.length.toFixed(0).length, "0")}) ` + "Write item: " + keyName + ` (${locale})`));
         }

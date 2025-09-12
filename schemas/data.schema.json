@@ -5,25 +5,25 @@
     "type": "object",
     "properties":
     {
-    "en-US": { "type": [ "string", "object", "array" ] },
+        "en-US": { "type": [ "string", "object", "array" ] },
         "es-ES": { "type": [ "string", "object", "array" ] },
         "de-DE": { "type": [ "string", "object", "array" ] },
         "fr-FR": { "type": [ "string", "object", "array" ] },
         "pl-PL": { "type": [ "string", "object", "array" ] },
         "ms-MY": { "type": [ "string", "object", "array" ] },
-        // "zh-CN": { "type": [ "string", "object", "array" ] }, // Deprecated, transitioning to zh-SG
         "zh-SG": { "type": [ "string", "object", "array" ] },
         "zh-HK": { "type": [ "string", "object", "array" ] },
         "zh-TW": { "type": [ "string", "object", "array" ] },
         "ja-JP": { "type": [ "string", "object", "array" ] },
         "ko-KR": { "type": [ "string", "object", "array" ] },
-        // "ru-RU": { "type": [ "string", "object", "array" ] }, // Deprecated, no longer serving Russia
         "ar-SA": { "type": [ "string", "object", "array" ] },
         "vi-VN": { "type": [ "string", "object", "array" ] },
         "hi-IN": { "type": [ "string", "object", "array" ] },
-        "pt-PT": { "type": [ "string", "object", "array" ] }
+        "pt-PT": { "type": [ "string", "object", "array" ] },
+        "it-IT": { "type": [ "string", "object", "array" ] }
     },
 
-    "required": [ "en-US", "zh-SG", "ms-MY" ],
-    "allowTrailingCommas": true
+    "required": [ "en-US", "zh-SG", "ms-MY", "pt-PT", "vi-VN", "it-IT" ],
+    "allowTrailingCommas": true,
+    "additionalProperties": false
 }
