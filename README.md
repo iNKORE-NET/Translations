@@ -10,17 +10,17 @@ This repository contains the translation files for all the iNKORE applications a
 | 🇪🇸 | es-ES | Español (España) | Spanish (Spain) | Community | 0 | - |
 | 🇩🇪 | de-DE | Deutsch (Deutschland) | German (Germany) | Community | 1 | - |
 | 🇫🇷 | fr-FR | Français (France) | French (France) | Community | 1 | - |
-| 🇵🇱 | pl-PL | Polski (Polska) | Polish | Community | 2 | - |
+| 🇵🇱 | pl-PL | Polski (Polska) | Polish (Poland) | Community | 2 | - |
 | 🇲🇾 | ms-MY | Bahasa Melayu (Malaysia) | Malay (Malaysia) | Official | 1 | - |
 | 🇨🇳 | ~~zh-CN~~ | ~~简体中文 (中国)~~ | ~~Chinese (Simplified, China)~~ | ~~Community~~ | ~~2~~ | Deprecated, transitioning to zh-SG |
 | 🇸🇬 | zh-SG | 简体中文 (新加坡) | Chinese (Simplified, Singapore) | Official | 0 | Replacing zh-CN |
 | 🇭🇰 | zh-HK | 繁體中文 (香港) | Chinese (Traditional, Hong Kong SAR) | Official | 1 | - |
 | 🇹🇼 | zh-TW | 正體中文 (中国台灣) | Chinese (Traditional, Taiwan) | Community | 0 | - |
-| 🇯🇵 | ja-JP | 日本語 (日本) | Japanese | Official | 1 | - |
-| 🇰🇷 | ko-KR | 한국어 (대한민국) | Korean | Community | 1 | - |
+| 🇯🇵 | ja-JP | 日本語 (日本) | Japanese (Japan) | Official | 1 | - |
+| 🇰🇷 | ko-KR | 한국어 (대한민국) | Korean (South Korea) | Community | 1 | - |
 | 🇷🇺 | ~~ru-RU~~ | ~~Русский (Россия)~~ | ~~Russian (Russia)~~ | ~~Community~~ | ~~2~~ | Deprecated, no longer serving Russia |
 | 🇸🇦 | ar-SA | العربية (المملكة العربية السعودية) | Arabic (Saudi Arabia) | Community | 2 | - |
-| 🇻🇳 | vi-VN | Tiếng Việt (Việt Nam) | Vietnamese | Community | 2 | - |
+| 🇻🇳 | vi-VN | Tiếng Việt (Việt Nam) | Vietnamese (Vietnam) | Community | 2 | - |
 | 🇮🇳 | hi-IN | हिन्दी (भारत) | Hindi (India) | Community | 2 | - |
 | 🇵🇹 | pt-PT | Português (Portugal) | Portuguese (Portugal) | Community | 2 | - |
 | 🇮🇹 | it-IT | Italiano (Italia) | Italian (Italy) | Community | 1 | - |
