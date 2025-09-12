@@ -1,4 +1,5 @@
 {
     "en-US": "Our developer team haven't tested this browser, and we can't guarantee that it will work as expected. An unrecognized browser may expose you to unexpected behaviors, like sudden crashes or security vulnerabilities.",
-    "zh-CN": "我们的开发团队尚未测试过此浏览器，因此无法保证其能正常工作。未识别的浏览器可能会导致意外行为，例如突然崩溃或安全漏洞。"
+    "zh-CN": "我们的开发团队尚未测试过此浏览器，因此无法保证其能正常工作。未识别的浏览器可能会导致意外行为，例如突然崩溃或安全漏洞。",
+    "zh-HK": "我哋嘅開發團隊未有測試過呢個瀏覽器，所以無法保證佢可以正常運作。未被識別嘅瀏覽器可能會導致意外行為，例如突然崩潰或安全漏洞。",	
 }

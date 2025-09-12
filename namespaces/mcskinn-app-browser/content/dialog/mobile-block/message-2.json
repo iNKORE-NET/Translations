@@ -1,4 +1,5 @@
 {
     "en-US": "Please use a desktop or laptop computer to access this application. If you are using that and still seeing this message, you need to resize your window to be larger enough. The application is unable to run without sufficient window size. Note: Touch input is not supported at this time, mouse operation is recommended.",
     "zh-CN": "请使用台式机或笔记本电脑访问此应用程序。如果您正在使用该设备但仍然看到此消息，则需要将窗口调整为足够大。没有足够的窗口大小，应用程序无法运行。温馨提示：目前暂不支持触摸输入，建议使用鼠标操作。",
+    "zh-HK": "  請使用桌上型電腦或筆記型電腦訪問此應用程式。如果您正在使用該設備但仍然看到此消息，則需要將視窗調整為足夠大。沒有足夠的視窗大小，應用程式無法運行。溫馨提示：目前暫不支援觸控輸入，建議使用滑鼠操作。",
 }
