@@ -1,0 +1,20 @@
+// Empty string, reserved for future use
+
+{
+    "en-US": "Stylus Drawing",
+    "es-ES": "Dibujo con lápiz",
+    "de-DE": "Stift-Zeichnen",
+    "fr-FR": "Dessin au stylet",
+    "pl-PL": "Rysowanie rysikiem",
+    "ms-MY": "Lukisan Stylus",
+    "zh-SG": "手写笔绘图",
+    "zh-HK": "手寫筆繪圖",
+    "zh-TW": "手寫筆繪圖",
+    "ja-JP": "スタイラス描画",
+    "ko-KR": "스타일러스 그리기",
+    "ar-SA": "الرسم بالقلم",
+    "vi-VN": "Vẽ bằng bút cảm ứng",
+    "hi-IN": "स्टायलस ड्राइंग",
+    "pt-PT": "Desenho com caneta",
+    "it-IT": "Disegno con stilo"
+}
