@@ -12,7 +12,7 @@ This repository contains the translation files for all the iNKORE applications a
 | 🇫🇷 | fr-FR | Français (France) | French (France) | Community | 1 | - |
 | 🇵🇱 | pl-PL | Polski (Polska) | Polish (Poland) | Community | 2 | - |
 | 🇲🇾 | ms-MY | Bahasa Melayu (Malaysia) | Malay (Malaysia) | Official | 1 | - |
-| 🇸🇬 | zh-SG | 简体中文 (新加坡) | Chinese (Simplified, Singapore) | Official | 0 | Replacing zh-CN |
+| 🇸🇬 | zh-SG | 简体中文 (新加坡) | Chinese (Simplified, Singapore) | Community | 0 | Replacing zh-CN |
 | 🇭🇰 | zh-HK | 繁體中文 (香港) | Chinese (Traditional, Hong Kong SAR) | Official | 1 | - |
 | 🇹🇼 | zh-TW | 正體中文 (中国台灣) | Chinese (Traditional, Taiwan) | Community | 0 | - |
 | 🇯🇵 | ja-JP | 日本語 (日本) | Japanese (Japan) | Official | 1 | - |
