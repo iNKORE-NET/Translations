@@ -1,5 +1,5 @@
 {
     "en-US": "We detected that {{locale}} is your preferred language. You can change the language at any time in the settings.",
-    "zh-SG": "您当前正在浏览此页面的 {{locale}} 翻译副本，你可以在设置中随时更改语言。",
+    "zh-CN": "您当前正在浏览此页面的 {{locale}} 翻译副本，你可以在设置中随时更改语言。",
     "zh-HK": "您目前正在瀏覽此頁面嘅 {{locale}} 翻譯副本，您可以隨時在設置中更改語言。",
 }

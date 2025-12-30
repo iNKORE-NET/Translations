@@ -11,7 +11,7 @@
         "fr-FR": { "type": [ "string", "object", "array" ] },
         "pl-PL": { "type": [ "string", "object", "array" ] },
         "ms-MY": { "type": [ "string", "object", "array" ] },
-        "zh-SG": { "type": [ "string", "object", "array" ] },
+        "zh-CN": { "type": [ "string", "object", "array" ] },
         "zh-HK": { "type": [ "string", "object", "array" ] },
         "zh-TW": { "type": [ "string", "object", "array" ] },
         "ja-JP": { "type": [ "string", "object", "array" ] },
