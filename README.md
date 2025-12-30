@@ -12,7 +12,7 @@ This repository contains the translation files for all the iNKORE applications a
 | 🇫🇷 | fr-FR | Français (France) | French (France) | Community | 1 | - |
 | 🇵🇱 | pl-PL | Polski (Polska) | Polish (Poland) | Community | 2 | - |
 | 🇲🇾 | ms-MY | Bahasa Melayu (Malaysia) | Malay (Malaysia) | Official | 1 | - |
-| 🇸🇬 | zh-SG | 简体中文 (新加坡) | Chinese (Simplified, Singapore) | Official | 0 | Replacing zh-CN |
+| 🇨🇳 | zh-CN | 简体中文 (中国) | Chinese (Simplified, China) | Community | 1 | - |
 | 🇭🇰 | zh-HK | 繁體中文 (香港) | Chinese (Traditional, Hong Kong SAR) | Official | 1 | - |
 | 🇹🇼 | zh-TW | 正體中文 (中国台灣) | Chinese (Traditional, Taiwan) | Community | 0 | - |
 | 🇯🇵 | ja-JP | 日本語 (日本) | Japanese (Japan) | Official | 1 | - |
@@ -27,10 +27,8 @@ This repository contains the translation files for all the iNKORE applications a
 
 | 🚩 | ID | Name | Name (English) | Source | Priority | Notes |
 |------|-------------|-------------|-------------------------|--------|----------|-------|
-| 🇨🇳 | ~~zh-CN~~ | ~~简体中文 (中国)~~ | ~~Chinese (Simplified, China)~~ | ~~Community~~ | ~~2~~ | Deprecated, transitioning to zh-SG |
 | 🇷🇺 | ~~ru-RU~~ | ~~Русский (Россия)~~ | ~~Russian (Russia)~~ | ~~Community~~ | ~~2~~ | Deprecated, no longer serving Russia |
 
-- `zh-CN` is deprecated and transitioning to `zh-SG`, `zh-HK` and `zh-TW`.
 - `ru-RU` is deprecated as the company no longer serves Russia due to **increasing cyberattacks and piracy concerns**.
 
 ### Notes
