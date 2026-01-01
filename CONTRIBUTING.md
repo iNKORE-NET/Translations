@@ -383,7 +383,7 @@ Underscores are used to mark **variants** of the same concept - translations tha
   - `back-to-catalog_short.json` → "Catalog" / "总目录" (shorter version)
 
 - **Context/usage**: Different contexts requiring different translations in other languages
- 
+
   - `shortcuts_key.json` → "Shortcuts" / "快捷键" (keyboard shortcuts)
   - `shortcuts_quick.json` → "Shortcuts" / "快捷方式" (quick access shortcuts)
 
