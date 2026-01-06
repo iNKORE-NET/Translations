@@ -14,7 +14,7 @@ This repository contains the translation files for all the iNKORE applications a
 | 🇲🇾 | ms-MY | Bahasa Melayu (Malaysia) | Malay (Malaysia) | Official | 1 | - |
 | 🇨🇳 | zh-CN | 简体中文 (中国) | Chinese (Simplified, China) | Community | 1 | - |
 | 🇭🇰 | zh-HK | 繁體中文 (香港) | Chinese (Traditional, Hong Kong SAR) | Official | 1 | - |
-| 🇹🇼 | zh-TW | 正體中文 (中国台灣) | Chinese (Traditional, Taiwan) | Community | 0 | - |
+| 🇹🇼 | zh-TW | 正體中文 (台灣) | Chinese (Traditional, Taiwan) | Community | 0 | - |
 | 🇯🇵 | ja-JP | 日本語 (日本) | Japanese (Japan) | Official | 1 | - |
 | 🇰🇷 | ko-KR | 한국어 (대한민국) | Korean (South Korea) | Community | 1 | - |
 | 🇸🇦 | ar-SA | العربية (المملكة العربية السعودية) | Arabic (Saudi Arabia) | Community | 2 | - |
