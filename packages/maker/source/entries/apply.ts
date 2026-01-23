@@ -243,8 +243,8 @@ function applyJsonEntry(
         throw new Error("Source file not found");
     }
 
-    const content = fs.readFileSync(filePath, "utf-8");
-    const data = JSON5.parse(content);
+    const originalContent = fs.readFileSync(filePath, "utf-8");
+    const originalData = JSON5.parse(originalContent);
 
     // Parse newValue if it looks like JSON (for complex values)
     let parsedValue: unknown = newValue;
@@ -262,19 +262,110 @@ function applyJsonEntry(
     }
 
     // Check if value is unchanged
-    const currentValue = data[locale];
+    const currentValue = originalData[locale];
     if (JSON.stringify(currentValue) === JSON.stringify(parsedValue))
     {
         return "skipped";
     }
 
-    if (!dryRun)
+    if (dryRun)
     {
-        data[locale] = parsedValue;
-        fs.writeFileSync(filePath, JSON.stringify(data, null, 4));
+        return "updated";
     }
 
+    // Text-based modification to preserve formatting
+    const modifiedContent = modifyJsonText(originalContent, locale, parsedValue);
+
+    // Validate the result
+    let validatedData: Record<string, unknown>;
+    try
+    {
+        validatedData = JSON5.parse(modifiedContent);
+    }
+    catch (e)
+    {
+        throw new Error(`Failed to produce valid JSON: ${e}`);
+    }
+
+    // Verify the value was correctly set
+    if (JSON.stringify(validatedData[locale]) !== JSON.stringify(parsedValue))
+    {
+        throw new Error("Validation failed: written value doesn't match expected value");
+    }
+
+    fs.writeFileSync(filePath, modifiedContent);
     return "updated";
+}
+
+function modifyJsonText(content: string, locale: string, value: unknown): string
+{
+    const valueStr = typeof value === "string"
+        ? JSON.stringify(value)
+        : JSON.stringify(value);
+
+    // Pattern to find existing locale key (handles both " and ' quotes)
+    // Matches: "locale": value  or  'locale': value
+    const localePattern = new RegExp(
+        `(["'])${escapeRegex(locale)}\\1\\s*:\\s*` +
+        `(?:` +
+        `"(?:[^"\\\\]|\\\\.)*"` +  // double-quoted string
+        `|'(?:[^'\\\\]|\\\\.)*'` +  // single-quoted string
+        `|\\{[^{}]*\\}` +           // simple object (non-nested)
+        `|\\[[^\\[\\]]*\\]` +       // simple array (non-nested)
+        `|[^,}\\]]+` +              // other values (numbers, booleans, null)
+        `)`,
+        'g'
+    );
+
+    // Check if locale already exists
+    if (localePattern.test(content))
+    {
+        // Reset lastIndex after test
+        localePattern.lastIndex = 0;
+        // Replace existing value
+        return content.replace(localePattern, `"${locale}": ${valueStr}`);
+    }
+    else
+    {
+        // Insert new locale - find the last closing brace
+        const lastBraceIndex = content.lastIndexOf('}');
+        if (lastBraceIndex === -1)
+        {
+            throw new Error("Invalid JSON structure: no closing brace found");
+        }
+
+        // Find what's before the closing brace to determine if we need a comma
+        const beforeBrace = content.substring(0, lastBraceIndex);
+        const trimmedBefore = beforeBrace.trimEnd();
+
+        // Detect indentation from the file
+        const indentMatch = content.match(/\n([ \t]+)["']/);
+        const indent = indentMatch ? indentMatch[1] : "    ";
+
+        // Check if file uses trailing commas (JSON5 style)
+        const hasTrailingComma = trimmedBefore.endsWith(',');
+
+        if (trimmedBefore.endsWith('{'))
+        {
+            // Empty object, no comma needed
+            return trimmedBefore + `\n${indent}"${locale}": ${valueStr}\n}`;
+        }
+        else if (hasTrailingComma)
+        {
+            // File uses trailing commas - preserve the style
+            return trimmedBefore + `\n${indent}"${locale}": ${valueStr},\n}`;
+        }
+        else
+        {
+            // No trailing comma style - add comma before new entry only
+            return trimmedBefore + `,\n${indent}"${locale}": ${valueStr}\n}`;
+        }
+    }
+}
+
+function escapeRegex(str: string): string
+{
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function applyTextEntry(

@@ -32,7 +32,7 @@ export const locales =
         workinProgress: true
     },
 
-    "zh-SG":
+    "zh-CN":
     {
         workinProgress: true
     },

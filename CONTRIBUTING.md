@@ -476,33 +476,19 @@ The generated file looks like this:
         "usedFallback": false,
         "version": "1.0"
     },
-    "$entries": {
-        "command.back": {
-            "value": "Back",
-            "source": {
-                "file": "namespaces/coreworks/command/back.json",
-                "fileType": "json"
-            },
-            "fallback": false
-        },
-        "command.save": {
-            "value": "Save",
-            "source": {
-                "file": "namespaces/coreworks/command/save.json",
-                "fileType": "json"
-            },
-            "fallback": false
-        }
-        // ... more entries
-    }
+    "command.back": "Back",
+    "command.save": "Save",
+    "command.cancel": "Cancel",
+    "common.loading": "Loading..."
+    // ... more entries
 }
 ```
 
 To translate into a new language (e.g., `ms-MY`):
 
 1. Change `$metadata.locale` from `"en-US"` to `"ms-MY"`
-2. Translate each `value` field in `$entries`
-3. If an entry has `"fallback": true` and starts with `[EN] `, remove the prefix after translating
+2. Translate each value (the strings after the colon)
+3. If an entry starts with `[EN] ` (fallback marker), remove the prefix after translating
 
 ### Step 3: Apply Changes
 
