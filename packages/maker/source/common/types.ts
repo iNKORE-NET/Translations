@@ -10,3 +10,28 @@ export type Validator =
      */
     validate: (text: string, options: { type: Exclude<ReturnType<typeof readItemData>, null>["type"]}) => string | boolean;
 }
+
+// Collect/Apply types
+
+export interface CollectMetadata
+{
+    exportedAt: string;
+    locale: string;
+    namespace: string;
+    subpath: string | null;
+    usedFallback: boolean;
+    version: string;
+}
+
+export type CollectOutput =
+{
+    $metadata: CollectMetadata;
+} & Record<string, string>;
+
+export interface ApplyResult
+{
+    updated: string[];
+    created: string[];
+    skipped: string[];
+    errors: Array<{ key: string; error: string }>;
+}

@@ -14,3 +14,4 @@ export const currentDirectory = (function ()
 export const namespaceRootPath = path.join(currentDirectory, "namespaces");
 export const projectRootPath = path.join(currentDirectory, "exports");
 export const outputRootPath = path.join(currentDirectory, ".output");
+export const collectRootPath = path.join(currentDirectory, ".collect");

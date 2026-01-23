@@ -3,6 +3,7 @@ dist/
 build/
 .compose/
 .output/
+.collect/
 
 
 # !maker/dist/

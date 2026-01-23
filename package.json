@@ -3,7 +3,10 @@
     "private": true,
     "scripts": {
         "comp": "node packages/maker/dist/main.js compose",
-        "chk": "node packages/maker/dist/main.js check"
+        "chk": "node packages/maker/dist/main.js check",
+        "collect": "node packages/maker/dist/main.js collect",
+        "apply": "node packages/maker/dist/main.js apply",
+        "help": "node packages/maker/dist/main.js help"
     },
     "repository":
     {

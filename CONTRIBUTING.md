@@ -427,6 +427,136 @@ As for text and markdown files, since one file contains only one translation ite
 
 Note: The type of file is usally determined there already by our staff and workers. As a contributor, you typically just need to observe the existing structure and add translations accordingly.
 
+## Bulk Translation Workflow
+
+For translating multiple files at once, we provide a **collect/apply** workflow that consolidates translations into a single file for easier editing.
+
+### Overview
+
+Instead of editing dozens of individual JSON files, you can:
+
+1. **Collect** all translations from a namespace into one JSON file
+2. **Edit** the consolidated file (translate all values)
+3. **Apply** the changes back to the source files
+
+This is especially useful when:
+
+- Adding a new language to an entire namespace
+- Reviewing/updating many translations at once
+- Working with external translators who prefer a single file
+
+### Step 1: Collect Translations
+
+Use the `collect` command to extract translations:
+
+```bash
+# Collect en-US translations from a namespace
+pnpm collect en-US coreworks
+
+# Collect from a specific subdirectory
+pnpm collect en-US coreworks/command
+
+# Include missing translations with en-US as fallback (marked with [EN] prefix)
+pnpm collect ja-JP coreworks -f
+```
+
+This creates a file in `.collect/` directory (e.g., `.collect/coreworks_en-us.json`).
+
+### Step 2: Edit the Consolidated File
+
+The generated file looks like this:
+
+```json5
+{
+    "$metadata": {
+        "exportedAt": "2026-01-23T10:30:00.000Z",
+        "locale": "en-US",
+        "namespace": "coreworks",
+        "subpath": null,
+        "usedFallback": false,
+        "version": "1.0"
+    },
+    "$entries": {
+        "command.back": {
+            "value": "Back",
+            "source": {
+                "file": "namespaces/coreworks/command/back.json",
+                "fileType": "json"
+            },
+            "fallback": false
+        },
+        "command.save": {
+            "value": "Save",
+            "source": {
+                "file": "namespaces/coreworks/command/save.json",
+                "fileType": "json"
+            },
+            "fallback": false
+        }
+        // ... more entries
+    }
+}
+```
+
+To translate into a new language (e.g., `ms-MY`):
+
+1. Change `$metadata.locale` from `"en-US"` to `"ms-MY"`
+2. Translate each `value` field in `$entries`
+3. If an entry has `"fallback": true` and starts with `[EN] `, remove the prefix after translating
+
+### Step 3: Apply Changes
+
+Apply the translated file back to the source files:
+
+```bash
+# Apply translations
+pnpm apply .collect/coreworks_en-us.json
+
+# Preview changes without writing (dry run)
+pnpm apply .collect/coreworks_en-us.json --dry-run
+```
+
+The apply command will:
+
+- **Update** existing translations in JSON files
+- **Create** new locale-specific TXT/MD files if needed
+- **Skip** unchanged values
+- **Warn** about any issues encountered
+
+### Command Reference
+
+#### `pnpm collect`
+
+```bash
+pnpm collect <locale> <path> [options]
+```
+
+| Argument | Description |
+|----------|-------------|
+| `locale` | The locale to collect (e.g., `en-US`, `ja-JP`) |
+| `path` | Namespace or path (e.g., `coreworks`, `coreworks/command`) |
+
+| Option | Description |
+|--------|-------------|
+| `-f, --fallback` | Use en-US as fallback for missing translations |
+| `-o, --output <path>` | Custom output file path |
+
+#### `pnpm apply`
+
+```bash
+pnpm apply <file> [options]
+```
+
+| Argument | Description |
+|----------|-------------|
+| `file` | The JSON file to apply (e.g., `.collect/coreworks_en-us.json`) |
+
+| Option | Description |
+|--------|-------------|
+| `--dry-run` | Preview changes without writing files |
+
+---
+
 ## Testing Your Translations
 
 ### Local Testing
