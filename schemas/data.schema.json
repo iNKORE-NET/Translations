@@ -23,7 +23,7 @@
         "it-IT": { "type": [ "string", "object", "array" ] }
     },
 
-    "required": [ "en-US", "zh-SG" ],
+    "required": [ "en-US" ],
     "allowTrailingCommas": true,
     "additionalProperties": false
 }

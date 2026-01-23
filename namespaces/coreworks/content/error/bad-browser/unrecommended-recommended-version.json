@@ -2,4 +2,5 @@
     "en-US": "Version {{VERSION}}+, latest is always recommended",
     "zh-CN": "版本 {{VERSION}}+，始终推荐使用最新版本",
     "zh-HK": "版本 {{VERSION}}+，始終建議使用最新版本",
+    "ms-MY": "Versi {{VERSION}}+, terkini sentiasa disyorkan",
 }
